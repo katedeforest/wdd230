@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Cousine&family=Croissant+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cousine", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  background: #1f271b;
+  color: #faf3dd;
+  justify-content: center;
+  align-items: center;
+}
+
+.portrait {
+  display: inline-block;
+  padding: 20px;
+  width: 150px;
+}
+
+h1 {
+  display: inline-block;
+  padding: 20px;
+  font-family: "Croissant One", serif;
+  font-size: 75px;
+}
+
+nav {
+  background: #55917f;
+  text-align: center;
+}
+
+a {
+  padding: 20px;
+  display: block;
+  color: #faf3dd;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  padding: 40px;
+  background: #faf3dd;
+  width: 1000px;
+  display: grid;
+  /* grid-template: ; */
+}
+
+h2 {
+  color: #1f271b;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid #1f271b;
+}
+
+.card {
+  margin: 20px;
+  border: 1px solid;
+}
+
+h3 {
+  background: #55917f;
+  color: #faf3dd;
+  font-size: 25px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  background: #1f271b;
+  text-align: center;
+}
