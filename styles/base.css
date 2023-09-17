@@ -8,6 +8,7 @@
 
 body {
   height: 100vh;
+  background: #faf3dd;
 }
 
 header {
@@ -36,21 +37,20 @@ nav {
   text-align: center;
 }
 
-a {
+nav a {
   padding: 20px;
   display: block;
-  color: #faf3dd;
   font-size: 25px;
+  color: #faf3dd;
   text-decoration: none;
 }
 
 main {
   margin: 0 auto;
   padding: 40px;
-  background: #faf3dd;
   width: 1000px;
   display: grid;
-  /* grid-template: ; */
+  grid-template: 50px auto auto / 1000px;
 }
 
 h2 {
@@ -67,16 +67,35 @@ h2 {
 
 h3 {
   background: #55917f;
+  padding: 20px;
   color: #faf3dd;
   font-size: 25px;
   text-align: center;
 }
 
 li {
+  padding: 20px;
   list-style-type: none;
 }
 
+li a {
+  font-size: 25px;
+  color: #1f271b;
+}
+
+.card p {
+  font-size: 25px;
+  padding: 20px;
+}
+
 footer {
+  padding: 20px;
   background: #1f271b;
+  color: #faf3dd;
   text-align: center;
+  font-size: 20px;
+}
+
+footer p {
+  padding: 5px;
 }
