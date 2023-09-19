@@ -39,7 +39,7 @@ nav {
 
 nav a {
   padding: 20px;
-  display: block;
+  /* display: block; */
   font-size: 25px;
   color: #fffff5;
   text-decoration: none;
@@ -62,7 +62,8 @@ h2 {
 
 .card {
   margin: 20px;
-  border: 1px solid;
+  border: 1px solid #1f271b;
+  border-radius: 20px;
 }
 
 h3 {
@@ -71,6 +72,8 @@ h3 {
   color: #fffff5;
   font-size: 25px;
   text-align: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 li {
@@ -99,5 +102,3 @@ footer {
 footer p {
   padding: 5px;
 }
-
-/*  */

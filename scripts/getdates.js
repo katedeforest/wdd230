@@ -7,5 +7,3 @@ document.querySelector("#currentYear").innerHTML =
 
 // Get Last Modified Date
 document.querySelector("#lastModified").innerHTML = document.lastModified;
-
-//
