@@ -21,27 +21,27 @@ header {
 
 .portrait {
   display: inline-block;
-  padding: 20px;
+  padding: 1rem;
   width: 150px;
 }
 
 h1 {
   display: inline-block;
-  padding: 20px;
+  padding: 1rem;
   font-family: "Croissant One", serif;
-  font-size: 75px;
+  font-size: 50px;
 }
 
 nav {
   background: #447465;
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
 }
 
 nav a {
-  padding: 20px;
-  /* display: block; */
-  font-size: 25px;
+  padding: 1rem;
+  display: block;
+  font-size: 15px;
   color: #fffff5;
   text-decoration: none;
 }
@@ -49,14 +49,14 @@ nav a {
 main {
   margin: 0 auto;
   padding: 40px;
-  width: 1000px;
+  max-width: 700px;
   display: grid;
-  grid-template: 50px auto auto / 1000px;
+  grid-template: 50px auto auto / 1fr;
 }
 
 h2 {
   color: #1f271b;
-  font-size: 50px;
+  font-size: 20px;
   text-align: center;
   border-bottom: 1px solid #1f271b;
 }
@@ -69,37 +69,37 @@ h2 {
 
 h3 {
   background: #447465;
-  padding: 20px;
+  padding: 1rem;
   color: #fffff5;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 
 li {
-  padding: 20px;
+  padding: 1rem;
   list-style-type: none;
 }
 
 li a {
-  font-size: 25px;
+  font-size: 20px;
   color: #1f271b;
 }
 
 .card p {
-  font-size: 25px;
-  padding: 20px;
+  font-size: 20px;
+  padding: 1rem;
 }
 
 footer {
-  padding: 20px;
+  padding: 1rem;
   background: #1f271b;
   color: #fffff5;
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 footer p {
-  padding: 5px;
+  padding: 1rem;
 }
