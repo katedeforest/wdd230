@@ -13,10 +13,14 @@ footer {
   padding: 1rem;
 }
 
-h1 {
+h1,
+footer p {
   color: #fff;
   text-align: center;
   font-family: "Trirong", serif;
+}
+
+h1 {
   font-size: 35px;
 }
 
@@ -62,10 +66,4 @@ p {
 
 img {
   width: 75%;
-}
-
-footer p {
-  color: #fff;
-  text-align: center;
-  font-family: "Trirong", serif;
 }
