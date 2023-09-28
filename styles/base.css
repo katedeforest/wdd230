@@ -13,7 +13,8 @@ body {
 
 header {
   display: flex;
-  background: #1f271b;
+  background: #61988e;
+
   color: #fffff5;
   justify-content: center;
   align-items: center;
@@ -33,9 +34,9 @@ h1 {
 }
 
 nav {
-  background: #61988e;
+  background: #1f271b;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 nav a {
