@@ -45,3 +45,22 @@ h3 {
   border: 2px solid #000022;
   border-radius: 16px;
 }
+
+.wires {
+  height: auto;
+}
+
+.wiregrid {
+  display: grid;
+  grid-template: 450 350 / 1fr;
+  grid-gap: 10px;
+}
+
+.one {
+  height: 80%;
+}
+
+.two {
+  height: 80%;
+  padding-top: 1.5rem;
+}
