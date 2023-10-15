@@ -7,10 +7,11 @@
   --mid-orange: #e28413;
 }
 
+/* HEADER */
 header {
   margin: 0;
   padding: 1rem 1rem 0px 1rem;
-  background-color: var(--light);
+  background: var(--light);
   color: var(--dark);
   display: grid;
   grid-template: auto auto / 30px 1fr 30px;
@@ -64,16 +65,81 @@ header {
   flex-direction: column;
 }
 
-#nav-menu li {
+.navlist {
   list-style-type: none;
+  font-size: 20px;
+  color: var(--dark);
 }
 
-#nav-menu li a {
-  font-size: 20px;
+.link {
   color: var(--dark);
   text-decoration: none;
 }
 
+.navlist p {
+  display: inline;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.5rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--mid-orange);
+  /* -webkit-transition: 0.3s; */
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: var(--light);
+  /* -webkit-transition: 0.4s; */
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: var(--mid-teal);
+}
+
+input:checked + .slider:before {
+  /* -webkit-transform: translateX(1rem); */
+  -ms-transform: translateX(1rem);
+  transform: translateX(1rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 1rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* BODY AND MAIN */
 h1 {
   font-family: "Lora", serif;
 }
@@ -87,6 +153,12 @@ main {
   font-family: "Hind Madurai", sans-serif;
 }
 
+body {
+  background-color: var(--mid-teal);
+  color: var(--dark);
+}
+
+/* HERO */
 #hero {
   display: grid;
   grid-template: 100px 100px / 1fr;
@@ -109,15 +181,12 @@ main {
   border-radius: 1rem;
 }
 
-body {
-  background-color: var(--mid-teal);
-  color: var(--dark);
-}
-
+/* CARDS */
 .card {
   margin: 1rem auto;
   padding: 1rem;
-  background-color: var(--light);
+  background: var(--light);
+  color: var(--dark);
   /* ORANGE SIDE BAR */
   /* width: 90%; */
   /* border-left: 30px solid var(--mid-orange); */
@@ -133,10 +202,11 @@ body {
   border-left: 3px solid var(--mid-orange);
 }
 
+/* FOOTER */
 footer {
   padding: 1rem 1rem 0px 1rem;
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
   display: grid;
   grid-template: 50px auto auto/ 100px 1fr;
 }
