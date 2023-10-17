@@ -15,6 +15,16 @@
   #nav-menu {
     flex-direction: row;
     align-items: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .link {
+    padding: 0 0.5rem;
+  }
+
+  .navlist p::before {
+    content: "| ";
   }
 
   #hero {
@@ -67,5 +77,35 @@
     grid-row: 2/3;
     border-left: none;
     border-top: 1px solid var(--mid-orange);
+  }
+
+  footer {
+    grid-template: auto auto / 1fr 2fr 3fr;
+  }
+
+  .footer-img {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  .footer-img img {
+    width: 50%;
+    justify-self: right;
+  }
+
+  .chamber-info {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .contact {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+
+  .base-info {
+    margin-top: 1rem;
+    grid-row: 2/3;
+    grid-column: 1/4;
   }
 }
