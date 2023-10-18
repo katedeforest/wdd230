@@ -34,12 +34,12 @@
 
   #hero {
     width: 100%;
-    grid-template: 200px 200px / 1fr;
+    grid-template: 250px 250px / 1fr;
     overflow: hidden;
   }
 
-  #hero-img {
-    width: 100%;
+  #hero-action a {
+    font-size: large;
   }
 
   main {
@@ -85,7 +85,7 @@
   }
 
   footer {
-    grid-template: auto auto / 5fr 1fr 2fr 3fr 5fr;
+    grid-template: auto auto / 4fr 1fr 2fr 3fr 4fr;
   }
 
   .footer-img {
