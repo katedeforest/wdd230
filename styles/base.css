@@ -109,8 +109,8 @@ main {
   top: 60px;
   left: 50px;
   padding: 0.5rem;
-  background-color: rgb(12.2, 15.3, 10.6, 0.1);
-  /* box-shadow: 0 0 3rem #fff; */
+  /* background-color: rgb(12.2, 15.3, 10.6, 0.1); */
+  box-shadow: 0 0 3rem #fff;
 }
 
 h2 {
