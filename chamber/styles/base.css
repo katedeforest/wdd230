@@ -216,6 +216,7 @@ body {
 
 .sky-sym,
 .humidity,
+.wind-speed,
 .wind-chill {
   text-align: right;
 }
