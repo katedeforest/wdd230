@@ -76,12 +76,26 @@
       <!-- </nav> -->
     </header>
 
-    <section id="hero">
-      <img id="hero-img" src="images/herriman4.jpeg" alt="Chamber Hero Image" />
-      <h3 id="hero-action"><a href="#">JOIN THE CHAMBER</a></h3>
-    </section>
     <main id="chamber-main">
       <!-- HERO -->
+      <section id="hero">
+        <picture id="hero-pic">
+          <source media="(min-width:1200px)" srcset="images/Large.webp" />
+          <source media="(min-width:700px)" srcset="images/Medium.webp" />
+          <source media="(min-width:400px)" srcset="images/Small.webp" />
+          <img
+            src="images/Small.webp"
+            alt="Group of Co-workers Conversing"
+            id="hero-img"
+          />
+        </picture>
+        <!-- <img
+        id="hero-img"
+        src="images/HerrimanCityHall.webp"
+        alt="Chamber Hero Image"
+      /> -->
+        <h3 id="hero-action"><a href="#">JOIN THE CHAMBER</a></h3>
+      </section>
 
       <!-- CURRENT EVENTS -->
       <section class="card cur-events">
