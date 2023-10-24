@@ -1,0 +1,12 @@
+body {
+  background-color: indianred;
+  height: 775px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 150px;
+}

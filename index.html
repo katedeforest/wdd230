@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Frontend Development - Katherine DeForest - WDD230 Course Assignment Portal"
+    />
+    <meta name="author" content="Katherine DeForest" />
+    <meta property="og:url" content="https://katedeforest.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Katherine DeForest - WDD 230 - Web Frontend Development"
+    />
+    <meta
+      property="og:description"
+      content="Web Frontend Development - Katherine DeForest - WDD230 Course Assignment Portal"
+    />
+    <meta
+      property="og:image"
+      content="https://katedeforest.github.io/wdd230/images/self-portrait02.jpeg"
+    />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>Katherine DeForest - WDD 230 - Web Frontend Development</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/self-portrait02.webp"
+        alt="Image of Katherine DeForest"
+        class="portrait"
+      />
+      <h1>Katherine DeForest</h1>
+    </header>
+    <nav>
+      <button class="menu-hide">X</button>
+      <button class="menu-show showing">&equiv;</button>
+      <ul id="nav-menu">
+        <li>
+          <a href="https://katedeforest.github.io/wdd230/" id="current">Home</a>
+        </li>
+        <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="https://www.byui.edu" target="_blank">BYU-Idaho</a></li>
+        <li>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/4-ne/1?lang=eng&id=p7#p7"
+            target="_blank"
+            >Scripture</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="hero">
+        <picture id="hero-pic">
+          <source
+            media="(min-width:960px)"
+            srcset="images/ProvoUtahTemple2.webp"
+          />
+          <source
+            media="(min-width:400px)"
+            srcset="images/ProvoUtahTemple(small).webp"
+          />
+          <img
+            src="images/ProvoUtahTemple.webp"
+            alt="Church of Jesus Christ of Latter-day Saints Temple"
+            id="hero-img"
+          />
+        </picture>
+        <section id="hero-label">
+          <p>Provo Utah Temple</p>
+        </section>
+      </section>
+      <h2>WDD 230: Web Frontend Development</h2>
+      <section class="card">
+        <h3>Learning Activities</h3>
+        <ol>
+          <li>Lesson 01</li>
+          <ul>
+            <li><a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
+            <li><a href="lesson01/media-query.html">Media Query Example</a></li>
+          </ul>
+          <li>Lesson 02</li>
+          <ul>
+            <li><a href="lesson02/design.html">Web Design Activity</a></li>
+            <li>
+              <a href="lesson02/design-principles.html"
+                >Design Principles Assignment</a
+              >
+            </li>
+          </ul>
+          <li>Lesson 03</li>
+          <ul>
+            <li>
+              <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
+            </li>
+          </ul>
+          <li>Lesson 04</li>
+          <ul>
+            <li><a href="lesson04/pseudo-classes.html">Pseudo Classes</a></li>
+          </ul>
+          <li>Lesson 05</li>
+          <ul>
+            <li><a href="lesson05/bom.html">Book of Mormon List</a></li>
+          </ul>
+          <li><a></a></li>
+          <li><a></a></li>
+          <li><a></a></li>
+          <li><a></a></li>
+        </ol>
+      </section>
+      <section class="card">
+        <h3>Information</h3>
+        <p class="location">[location]</p>
+        <p class="weather">[weather]</p>
+        <p class="visits">[# of visits to page]</p>
+      </section>
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48657.76806796504!2d-111.759937437891!3d40.33989458396125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696138090021!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe> -->
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentYear"></span> Katherine DeForest</p>
+      <p>Utah, United States</p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+  </body>
+</html>

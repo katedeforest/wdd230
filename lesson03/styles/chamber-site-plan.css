@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Josefin+Slab:ital,wght@1,100&family=Lora:ital@1&family=Prompt:wght@300&family=Titillium+Web:wght@300&display=swap");
+
+:root {
+  --dark: #000022;
+  --mid-teal: #335c67;
+  --light: #fbf5f3;
+  --mid-orange: #e28413;
+  --mid-brown: #71421b;
+  --blue-gray: #626267;
+}
+
+header {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--mid-teal);
+  color: #000022;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Lora", sans-serif;
+}
+
+h3 {
+  font-family: "Prompt", serif;
+}
+
+.card {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 90%;
+  background-color: var(--light);
+  border-left: 30px solid var(--mid-orange);
+}
+
+.widget {
+  border: 2px solid #000022;
+  border-radius: 16px;
+}
+
+.wires {
+  height: auto;
+}
+
+.wiregrid {
+  display: grid;
+  grid-template: 450 350 / 1fr;
+  grid-gap: 10px;
+}
+
+.one {
+  height: 80%;
+}
+
+.two {
+  height: 80%;
+  padding-top: 1.5rem;
+}
