@@ -38,14 +38,11 @@
     <!-- SCRIPTS -->
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
-      <img
-        id="logo"
-        src="images/favicon_io/android-chrome-512x512.png"
-        alt="favicon, H"
-      />
+      <img id="logo" src="images/logo.webp" alt="favicon, H" />
       <h1 id="title">Herriman Chamber of Commerce</h1>
 
       <button class="menu-hide">&#9747;</button>
@@ -95,6 +92,7 @@
         alt="Chamber Hero Image"
       /> -->
         <h3 id="hero-action"><a href="#">JOIN THE CHAMBER</a></h3>
+        <p id="hero-label"></p>
       </section>
 
       <!-- CURRENT EVENTS -->
@@ -120,7 +118,7 @@
           <p class="humidity">Humidity:</p>
           <p class="hum-perc">-&percnt;</p>
           <p class="wind-speed">Wind Speed:</p>
-          <p class="speed-mph"><span class="speed">N/A</span>mph</p>
+          <p class="speed-mph"><span class="speed">5</span>mph</p>
           <p class="wind-chill">Wind Chill:</p>
           <p class="chill-perc"><span class="chill">-</span>&percnt;</p>
         </section>
@@ -155,10 +153,7 @@
 
     <footer id="chamber-footer">
       <section class="footer-img">
-        <img
-          src="images/favicon_io/android-chrome-512x512.png"
-          alt="favicon, H"
-        />
+        <img src="images/logo.webp" alt="favicon, H" />
       </section>
       <section class="chamber-info">
         <p>Herriman Chamber of Commerce</p>

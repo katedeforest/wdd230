@@ -151,6 +151,7 @@ h3 {
 }
 
 main {
+  margin: 0;
   font-family: "Hind Madurai", sans-serif;
   grid-template: auto auto auto auto / 1fr;
 }
@@ -169,6 +170,7 @@ body {
   justify-items: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 #hero-pic {
@@ -192,6 +194,22 @@ body {
   color: var(--mid-orange);
   text-decoration: none;
   font-size: small;
+}
+
+#hero-label {
+  width: 10%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0.5rem;
+  background-color: rgb(12.2, 15.3, 10.6, 0.1);
+  box-shadow: 0 0 3rem #fff;
+  color: #fff;
+  font-size: x-large;
+}
+
+#hero-label::before {
+  content: "Small";
 }
 
 /* CARDS */

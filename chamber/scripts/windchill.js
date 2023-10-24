@@ -9,6 +9,8 @@ function showWindChill(temp, speed) {
     );
     message = `${chill}`;
   }
+
+  windChillSpan.textContent = message;
 }
 
 const tempuratureSpan = document.querySelector(".temp");

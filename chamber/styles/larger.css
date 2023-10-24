@@ -46,7 +46,21 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: grid;
-    grid-template: auto auto / 0.5fr 2fr 1fr 0.5fr;
+    grid-template: auto auto auto / 0.5fr 2fr 1fr 0.5fr;
+  }
+
+  #hero {
+    grid-row: 1/2;
+    grid-column: 2/4;
+  }
+
+  #hero-label {
+    width: 7%;
+    top: 120px;
+  }
+
+  #hero-label::before {
+    content: "Large";
   }
 
   .card {
@@ -54,17 +68,17 @@
   }
 
   .cur-events {
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 2/3;
   }
 
   .weather {
-    grid-row: 1/2;
+    grid-row: 2/3;
     grid-column: 3/4;
   }
 
   .spotlights {
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 2/4;
     display: grid;
     grid-template: auto auto / 1fr 1fr 1fr;
