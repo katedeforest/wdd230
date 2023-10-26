@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META CONTENT -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Frontend Development - Katherine DeForest - Chamber of Commerce Main Page"
+    />
+    <meta name="author" content="Katherine DeForest" />
+    <!-- SOCIAL MEDIA META CONTENT -->
+    <meta property="og:url" content="https://katedeforest.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home | Herriman Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Web Frontend Development - Katherine DeForest - Chamber of Commerce Main Page"
+    />
+    <!-- TITLE -->
+    <title>Home | Herriman Chamber of Commerce</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon_io/favicon-32x32.png" />
+    <!-- STYLESHEETS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <!-- SCRIPTS -->
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+  </head>
+  <body>
+    <header id="chamber-header">
+      <img id="logo" src="images/logo.webp" alt="favicon, H" />
+      <h1 id="title">Herriman Chamber of Commerce</h1>
+
+      <button class="menu-hide">&#9747;</button>
+      <button class="menu-show showing">&equiv;</button>
+
+      <ul id="nav-menu">
+        <li class="navlist">
+          <a href="index.html" id="current" class="link">Home</a>
+        </li>
+        <li class="navlist">
+          <a href="#" class="link">Discovery</a>
+        </li>
+        <li class="navlist">
+          <a href="#" class="link">Directory</a>
+        </li>
+        <li class="navlist">
+          <a href="#" class="link">Join</a>
+        </li>
+
+        <li id="modeSwitch" class="navlist dark-mode">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+    </header>
+
+    <footer id="chamber-footer">
+      <section class="footer-img">
+        <img src="images/logo.webp" alt="favicon, H" />
+      </section>
+      <section class="chamber-info">
+        <p>Herriman Chamber of Commerce</p>
+        <p class="address">
+          5355 West<br />
+          Herriman Main Street<br />
+          Herriman, UT 84096
+        </p>
+      </section>
+      <section class="contact">
+        <p>info@herrimanchamber.com</p>
+        <p>(801) 446-5323</p>
+        <p class="location">Location Map</p>
+      </section>
+
+      <p class="base-info">
+        &copy;<span id="current-year"></span> Katherine DeForest<br />WDD230
+        Project<br />Last Modified: <span id="last-modified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
