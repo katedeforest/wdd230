@@ -1,4 +1,5 @@
 @media screen and (min-width: 700px) {
+  /* HEADER */
   header {
     grid-template: auto / 60px 1fr 60px;
   }
@@ -37,7 +38,8 @@
     font-size: medium;
   }
 
-  main {
+  /* MAIN PAGE */
+  #home-main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: grid;
@@ -93,6 +95,14 @@
     border-top: 1px solid var(--mid-orange);
   }
 
+  /* DISCOVER PAGE */
+  #discover-main {
+    display: grid;
+    grid-template: auto auto / 1fr 3fr;
+    grid-gap: 1rem;
+  }
+
+  /* FOOTER */
   footer {
     grid-template: auto auto / 1fr 2fr 3fr;
   }

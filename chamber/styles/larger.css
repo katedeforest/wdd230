@@ -1,4 +1,5 @@
 @media screen and (min-width: 1200px) {
+  /* HEADER */
   header {
     grid-template: auto / 60px 1fr 1fr;
   }
@@ -27,11 +28,6 @@
     display: none;
   }
 
-  nav ul {
-    display: flex;
-    flex-direction: row;
-  }
-
   #hero {
     width: 100%;
     grid-template: 250px 250px / 1fr;
@@ -42,7 +38,8 @@
     font-size: large;
   }
 
-  main {
+  /* MAIN PAGE */
+  #home-main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: grid;
@@ -98,6 +95,13 @@
     border-top: 1px solid var(--mid-orange);
   }
 
+  /* DISCOVER PAGE */
+  .disc-img {
+    width: 800;
+    height: 500;
+  }
+
+  /* FOOTER */
   footer {
     grid-template: auto auto / 4fr 1fr 2fr 3fr 4fr;
   }
