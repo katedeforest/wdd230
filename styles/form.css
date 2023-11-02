@@ -1,0 +1,37 @@
+label {
+  display: block;
+  margin: 1rem 0;
+}
+
+input {
+  display: block;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  width: 30rem;
+}
+
+#slidervalues {
+  display: flex;
+  width: 30rem;
+  margin: 0 0 0 1rem;
+}
+
+#slidervalues option {
+  flex: 1;
+}
+
+button {
+  font-size: 1.5rem;
+  color: white;
+  background-color: green;
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+input:valid {
+  box-shadow: 3px 3px 3px black;
+}
+
+input:invalid {
+  box-shadow: 3px 3px 3px red;
+}
