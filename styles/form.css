@@ -1,3 +1,9 @@
+:root {
+  --dark: #1f271b;
+  --light: #57756d;
+  --invalid: red;
+}
+
 #form-main {
   display: flex;
   justify-content: center;
@@ -34,7 +40,7 @@ input {
 button {
   font-size: 1.5rem;
   color: white;
-  background-color: #57756d;
+  background-color: var(--light);
   padding: 0.5rem;
   margin: 2rem auto;
   width: 50%;
@@ -44,13 +50,13 @@ button {
 
 button:hover {
   /* background-color: #1f271b; */
-  box-shadow: 1px 1px 1px #1f271b;
+  box-shadow: 1px 1px 1px var(--dark);
 }
 
 input:valid {
-  box-shadow: 2px 2px 2px #1f271b;
+  box-shadow: 2px 2px 2px var(--dark);
 }
 
 input:invalid {
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 2px 2px 2px var(--invalid);
 }
