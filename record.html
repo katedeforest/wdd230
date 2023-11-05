@@ -30,10 +30,12 @@
     />
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <title>Katherine DeForest - WDD 230 - Web Frontend Development</title>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/site-visits.js" defer></script>
+    <script src="scripts/form.js" defer></script>
   </head>
   <body>
     <header>
@@ -65,69 +67,13 @@
         </li>
       </ul>
     </nav>
-    <main>
-      <section id="hero">
-        <picture id="hero-pic">
-          <source
-            media="(min-width:960px)"
-            srcset="images/ProvoUtahTemple2.webp"
-          />
-          <source
-            media="(min-width:400px)"
-            srcset="images/ProvoUtahTemple(small).webp"
-          />
-          <img
-            src="images/ProvoUtahTemple.webp"
-            alt="Church of Jesus Christ of Latter-day Saints Temple"
-            id="hero-img"
-          />
-        </picture>
-        <section id="hero-label">
-          <h4>Provo Utah Temple</h4>
-        </section>
-      </section>
-      <h2>WDD 230: Web Frontend Development</h2>
-      <section class="card">
-        <h3>Learning Activities</h3>
-        <ol>
-          <li><a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
-          <li><a href="lesson01/media-query.html">Media Query Example</a></li>
-          <li><a href="lesson02/design.html">Web Design Activity</a></li>
-          <li>
-            <a href="lesson02/design-principles.html"
-              >Design Principles Assignment</a
-            >
-          </li>
-          <li>
-            <a href="lesson03/chamber-site-plan.html">Chamber Site Plan</a>
-          </li>
-          <li><a href="lesson04/pseudo-classes.html">Pseudo Classes</a></li>
-          <li><a href="lesson05/bom.html">Book of Mormon List</a></li>
-          <li><a href="form.html">Form Build</a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-        </ol>
-      </section>
-      <section class="card">
-        <h3>Information</h3>
-        <p class="location">Rexburg, Idaho</p>
-        <p class="weather">Weather: 30&deg; Snow</p>
-        <p class="visits">Visit Count: <span id="visitcount"></span></p>
-      </section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48657.76806796504!2d-111.759937437891!3d40.33989458396125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696138090021!5m2!1sen!2sus"
-        width="600"
-        height="450"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+
+    <main id="record-main">
+      <h2>Thank you for your submission!</h2>
     </main>
 
     <footer>
-      <p>&copy;<span id="currentYear"></span> Katherine DeForest</p>
-      <p>Utah, United States</p>
+      <p>&copy;<span id="currentYear"></span> Katherine DeForest - Utah, USA</p>
       <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
   </body>
