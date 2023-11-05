@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META CONTENT -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Frontend Development - Katherine DeForest - Chamber of Commerce Main Page"
+    />
+    <meta name="author" content="Katherine DeForest" />
+    <!-- SOCIAL MEDIA META CONTENT -->
+    <meta property="og:url" content="https://katedeforest.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Join | Herriman Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Web Frontend Development - Katherine DeForest - Chamber of Commerce Join Page"
+    />
+    <!-- TITLE -->
+    <title>Join | Herriman Chamber of Commerce</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon_io/favicon-32x32.png" />
+    <!-- STYLESHEETS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <!-- SCRIPTS -->
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/mode.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+  </head>
+  <body>
+    <header id="chamber-header">
+      <img id="logo" src="images/logo.webp" alt="favicon, H" />
+      <h1 id="title">Herriman Chamber of Commerce</h1>
+
+      <button class="menu-hide">&#9747;</button>
+      <button class="menu-show showing">&equiv;</button>
+      <!-- <nav id="chamber-nav"> -->
+      <ul id="nav-menu">
+        <li class="navlist">
+          <a href="index.html" id="current" class="link">Home</a>
+        </li>
+        <li class="navlist">
+          <a href="discover.html" class="link">Discovery</a>
+        </li>
+        <li class="navlist">
+          <a href="directory.html" class="link">Directory</a>
+        </li>
+        <li class="navlist">
+          <a href="join.html" class="link">Join</a>
+        </li>
+
+        <li id="modeSwitch" class="navlist dark-mode">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </li>
+      </ul>
+      <!-- </nav> -->
+    </header>
+
+    <main id="join-main">
+      <section class="join-sec">
+        <form method="get" action="/thankyou.html" id="join-form">
+          <fieldset id="join-fieldset">
+            <label class="field"
+              >First Name*
+              <input id="firstname" name="firstname" type="text" required
+            /></label>
+            <label class="field"
+              >Last Name*
+              <input id="lastname" name="lastname" type="text" required
+            /></label>
+            <label class="field"
+              >Title or Position
+              <input
+                id="position"
+                name="position"
+                type="text"
+                pattern="[/w- ]{7,}"
+            /></label>
+            <label class="field"
+              >Email*
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@email.com"
+                required
+            /></label>
+            <label class="field"
+              >Mobile Phone Number*
+              <input id="phone" name="phone" type="telephone" required
+            /></label>
+            <label class="field"
+              >Business/Organization Name*
+              <input id="business" name="business" type="text" required
+            /></label>
+            <h3>Membership Level</h3>
+            <label class="levelselect"
+              ><input
+                type="radio"
+                name="level"
+                class="level"
+              />Non-Profit</label
+            >
+            <label class="levelselect"
+              ><input type="radio" name="level" class="level" />Bronze</label
+            >
+            <label class="levelselect"
+              ><input type="radio" name="level" class="level" />Silver</label
+            >
+            <label class="levelselect"
+              ><input type="radio" name="level" class="level" />Gold</label
+            >
+            <label class="description"
+              >Description
+              <textarea id="description" name="description"></textarea>
+            </label>
+            <label
+              ><input id="currentdate" name="currentdate" type="hidden"
+            /></label>
+            <button type="submit">Join the Chamber</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="memberships" class="join-sec">
+        <h2>Membership Levels Benefits</h2>
+        <section class="np level">
+          <h3>Non-Profit Membership</h3>
+          <ul>
+            <li>For non profit organizations</li>
+            <li>No Fee</li>
+          </ul>
+        </section>
+        <section class="bronze level">
+          <h3>Bronze Membership</h3>
+          <ul>
+            <li>15% discount on events</li>
+            <li>10% discount on advertising</li>
+            <li>Fee of $50/month</li>
+          </ul>
+        </section>
+        <section class="silver level">
+          <h3>Silver Membership</h3>
+          <ul>
+            <li>25% discount on events</li>
+            <li>15% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>Fee of $100/month</li>
+          </ul>
+        </section>
+        <section class="gold level">
+          <h3>Gold Membership</h3>
+          <ul>
+            <li>50% discount on events</li>
+            <li>50% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>5 free featured ads per year</li>
+            <li>1 free training per year</li>
+            <li>Fee of $250/month</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer id="chamber-footer">
+      <section class="footer-img">
+        <img src="images/logo.webp" alt="favicon, H" />
+      </section>
+      <section class="chamber-info">
+        <p>Herriman Chamber of Commerce</p>
+        <p class="address">
+          5355 West<br />
+          Herriman Main Street<br />
+          Herriman, UT 84096
+        </p>
+      </section>
+      <section class="contact">
+        <p>info@herrimanchamber.com</p>
+        <p>(801) 446-5323</p>
+        <p class="location">Location Map</p>
+      </section>
+
+      <p class="base-info">
+        &copy;<span id="current-year"></span> Katherine DeForest<br />WDD230
+        Project<br />Last Modified: <span id="last-modified"></span>
+      </p>
+    </footer>
+  </body>
+</html>
