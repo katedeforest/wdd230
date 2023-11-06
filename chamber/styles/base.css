@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Josefin+Slab:ital,wght@1,100&family=Lora:ital@1&family=Prompt:wght@300&family=Titillium+Web:wght@300&display=swap");
+* {
+  /* border: 1px solid red; */
+}
 
 :root {
   --dark: #000022;
@@ -325,7 +328,7 @@ footer {
   content: "📍";
 }
 
-* DISCOVER PAGE */
+/* DISCOVER PAGE */
 /* sidebar sections */
 .side-sec {
   margin: 1rem 1rem;
@@ -369,24 +372,28 @@ footer {
 /* JOIN PAGE */
 #join-main {
   display: grid;
-  grid-template-columns: auto auto / 1fr;
+  grid-template: auto auto / 1fr;
   justify-items: center;
+}
+
+.join-sec {
+  width: 100%;
+  max-width: 450px;
 }
 
 #join-form {
   grid-row: 1/2;
   grid-column: 1/2;
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 1rem 0;
+  background-color: var(--light);
 }
 
 #join-fieldset {
-  background-color: var(--light);
   border: none;
-
-  /* width: 30rem; */
   padding: 1rem;
+  display: grid;
 }
 
 .field input {
@@ -397,21 +404,35 @@ footer {
   width: 25rem;
 }
 
+#join-fieldset p {
+  margin-bottom: 0.25rem;
+}
+
+#join-fieldset p::after {
+  content: " (see descriptions below)";
+}
+
 .levelselect {
-  display: inline;
+  display: block;
 }
 
 .levelselect .level {
-  width: 10px;
   display: inline;
+  margin: 0.5rem;
 }
 
 .description {
   display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .description textarea {
   display: block;
+  padding: 0.5rem;
+  width: 20rem;
+  height: 5rem;
+  overflow: visible;
 }
 
 #join-fieldset button {
@@ -419,29 +440,27 @@ footer {
   color: white;
   background-color: var(--mid-orange);
   padding: 0.5rem;
-  /* margin: auto 0; */
-  /* text-align: center; */
-  /* display: block; */
+  /* margin: auto 0;
+  text-align: center;
+  display: block; */
 }
 
-.field input:hover {
+/* .field input:hover {
   box-shadow: 1px 1px 1px var(--mid-teal);
-}
+} */
 
-.field input:valid {
-  box-shadow: 2px 2px 2px var(--dark);
-}
+/* .field input:valid {
+  box-shadow: 1px 1px 1px var(--mid-teal);
+} */
 
 .field input:invalid {
-  box-shadow: 2px 2px 2px red;
+  box-shadow: 1px 1px 1px var(--mid-orange);
 }
 
 #memberships {
   grid-row: 2/3;
   grid-column: 1/2;
   background-color: var(--light);
-  width: 25rem;
-  /* width: 30rem; */
   padding: 1rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
