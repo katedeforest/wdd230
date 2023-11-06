@@ -84,6 +84,10 @@ header {
   display: inline;
 }
 
+#current {
+  border-bottom: 1px solid var(--mid-orange);
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;

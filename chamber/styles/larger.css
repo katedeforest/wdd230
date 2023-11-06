@@ -13,11 +13,11 @@
     text-align: right;
   }
 
-  #nav-menu li {
+  #navlist {
     list-style-type: none;
   }
 
-  #nav-menu li a {
+  #navlist {
     text-decoration: none;
   }
 
