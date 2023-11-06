@@ -444,18 +444,7 @@ footer {
   color: white;
   background-color: var(--mid-orange);
   padding: 0.5rem;
-  /* margin: auto 0;
-  text-align: center;
-  display: block; */
 }
-
-/* .field input:hover {
-  box-shadow: 1px 1px 1px var(--mid-teal);
-} */
-
-/* .field input:valid {
-  box-shadow: 1px 1px 1px var(--mid-teal);
-} */
 
 .field input:invalid {
   box-shadow: 1px 1px 1px var(--mid-orange);

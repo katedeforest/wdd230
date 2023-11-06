@@ -136,9 +136,9 @@
 /* JOIN PAGE */
 /* #join-main {
   grid-template: auto / 1fr 1fr;
-}
+} */
 
-#join-form {
+/* #join-form {
   grid-row: 1/2;
   grid-column: 1/2;
 }
