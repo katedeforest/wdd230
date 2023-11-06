@@ -103,8 +103,13 @@
                 required
             /></label>
             <label class="field"
-              >Mobile Phone Number*
-              <input id="phone" name="phone" type="telephone" required
+              >Mobile Phone Number (ex. 123-456-7890)*
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
             /></label>
             <label class="field"
               >Business/Organization Name*
