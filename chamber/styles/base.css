@@ -378,8 +378,8 @@ footer {
 }
 
 .join-sec {
-  width: 100%;
-  max-width: 450px;
+  width: 90%;
+  /* max-width: 450px; */
   background-color: var(--light);
   margin: 1rem 0;
 }
@@ -395,7 +395,7 @@ footer {
   margin: 0.5rem 0;
   padding: 0.5rem;
   font-size: 1.1rem;
-  width: 25rem;
+  width: 90%;
 }
 
 #join-fieldset p {
