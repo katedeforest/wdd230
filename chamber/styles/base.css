@@ -373,27 +373,20 @@ footer {
 /* JOIN PAGE */
 #join-main {
   display: grid;
-  grid-template: auto auto / 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   justify-items: center;
 }
 
 .join-sec {
   width: 100%;
   max-width: 450px;
-}
-
-#join-form {
-  grid-row: 1/2;
-  grid-column: 1/2;
-  /* display: flex; */
-  /* justify-content: center; */
-  margin: 1rem 0;
   background-color: var(--light);
+  margin: 1rem 0;
 }
 
 #join-fieldset {
   border: none;
-  padding: 1rem;
+  padding-top: 1rem;
   display: grid;
 }
 
@@ -448,9 +441,6 @@ footer {
 }
 
 #memberships {
-  grid-row: 2/3;
-  grid-column: 1/2;
   background-color: var(--light);
   padding: 1rem;
-  margin: 1rem 0;
 }

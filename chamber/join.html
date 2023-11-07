@@ -38,7 +38,7 @@
     <!-- SCRIPTS -->
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/join.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
@@ -65,7 +65,7 @@
         <li id="modeSwitch" class="navlist dark-mode">
           <p>Dark Mode</p>
           <label class="switch">
-            <input type="checkbox" />
+            <input type="checkbox" name="switch" />
             <span class="slider round"></span>
           </label>
         </li>
@@ -91,7 +91,7 @@
                 id="position"
                 name="position"
                 type="text"
-                pattern="[/w- ]{7,}"
+                pattern="[A-Za-z\s\-]{7,}"
             /></label>
             <label class="field"
               >Email*
@@ -99,17 +99,18 @@
                 id="email"
                 name="email"
                 type="email"
-                placeholder="you@email.com"
+                placeholder="you@example.com"
                 required
+                autocomplete="email"
             /></label>
             <label class="field"
-              >Mobile Phone Number (ex. 123-456-7890)*
+              >Mobile Phone Number*
               <input
                 id="phone"
                 name="phone"
                 type="tel"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 required
+                autocomplete="tel"
             /></label>
             <label class="field"
               >Business/Organization Name*
@@ -136,9 +137,7 @@
               >Description of Business
               <textarea id="description" name="description"></textarea>
             </label>
-            <label
-              ><input id="currentdate" name="currentdate" type="hidden"
-            /></label>
+            <input id="currentdate" name="currentdate" type="hidden" />
             <button type="submit">Join the Chamber</button>
           </fieldset>
         </form>
