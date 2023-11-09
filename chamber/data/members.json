@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Example Name 1",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    },
+    {
+      "name": "Example Name 2",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    },
+    {
+      "name": "Example Name 3",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    },
+    {
+      "name": "Example Name 4",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    },
+    {
+      "name": "Example Name 5",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    },
+    {
+      "name": "Example Name 6",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    },
+    {
+      "name": "Example Name 7",
+      "address": "123 Main Street, Rexburg, ID 83440",
+      "phone": "123-456-7890",
+      "webisteurl": "https://www.rexburg.org",
+      "imageurl": "images/exmaple.jpg",
+      "membershiplevel": "gold"
+    }
+  ]
+}
