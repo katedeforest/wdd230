@@ -15,11 +15,12 @@ const cards = document.querySelector("#cards");
 function displayProphets(prophets) {
   prophets.forEach((prophet) => {
     let section = document.createElement("section");
+    section.classList.add("card");
     let sectionHTML = `
     <h3>${prophet.name} ${prophet.lastname}</h3>
     <p>Date of Birth: ${prophet.birthdate}</p>
     <p>Place of Birth: ${prophet.birthplace}</p>
-    <img src="${prophet.imageurl}" alt="${prophet.name} ${prophet.lastname}" />`;
+    <img src="${prophet.imageurl}" alt="${prophet.name} ${prophet.lastname}" loading="lazy"/>`;
     section.innerHTML = sectionHTML;
     cards.appendChild(section);
   });
