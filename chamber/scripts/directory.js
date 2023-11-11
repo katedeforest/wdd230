@@ -38,6 +38,9 @@ gridbutton.addEventListener("click", () => {
     listhead.classList.toggle("listheadshow");
   }
 });
+// gridbutton.addEventListener("mousedown", () => {
+//   gridbutton.style.background = "red";
+// });
 listbutton.addEventListener("click", () => {
   if (directorycards.classList.contains("directory-list")) {
     return;
@@ -48,3 +51,6 @@ listbutton.addEventListener("click", () => {
     listhead.classList.toggle("listheadshow");
   }
 });
+// listbutton.addEventListener("mousedown", () => {
+//   listbutton.style.background = "red";
+// });
