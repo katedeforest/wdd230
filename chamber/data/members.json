@@ -1,59 +1,59 @@
 {
   "members": [
     {
-      "name": "Example Name 1",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Smith's Food and Drug Store",
+      "address": "5560 W. 13400 So, Herriman, UT 84096",
+      "phone": "801-974-1400",
+      "websiteurl": "https://www.smithsfoodanddrug.com/",
+      "imageurl": "images/smiths.webp",
       "membershiplevel": "gold"
     },
     {
-      "name": "Example Name 2",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Ace Hardware of Herriman",
+      "address": "13348 S. 5600 W., Herriman, UT 84096",
+      "phone": "435-828-5374",
+      "websiteurl": "https://www.acehardware.com/store-details/16976",
+      "imageurl": "images/ace.webp",
       "membershiplevel": "gold"
     },
     {
-      "name": "Example Name 3",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Copper Mountain Manual Therapy, LLC",
+      "address": "12031 S Middle Teton Dr, Herriman, UT 84096",
+      "phone": "801-927-6933",
+      "websiteurl": "https://www.coppermountainmanualtherapy.com",
+      "imageurl": "images/cmmt.webp",
       "membershiplevel": "gold"
     },
     {
-      "name": "Example Name 4",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Beehive Homes of Herriman",
+      "address": "6352 W 13100 S, Herriman, UT 84096",
+      "phone": "801-703-4779",
+      "websiteurl": "https://beehivehomes.com/locations/herriman/",
+      "imageurl": "images/beehive.webp",
       "membershiplevel": "gold"
     },
     {
-      "name": "Example Name 5",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Cafe Rio Mexican Grill",
+      "address": "5506 W 13400 S, Herriman, UT 84096",
+      "phone": "801-930-6031",
+      "websiteurl": "https://www.caferio.com",
+      "imageurl": "images/caferio.webp",
       "membershiplevel": "gold"
     },
     {
-      "name": "Example Name 6",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Dominos Pizza LLC",
+      "address": "5184 W 13400 S, Herriman, UT 84096",
+      "phone": "801-253-3988",
+      "websiteurl": "https://www.dominos.com/en/",
+      "imageurl": "images/dominos.webp",
       "membershiplevel": "gold"
     },
     {
-      "name": "Example Name 7",
-      "address": "123 Main Street, Rexburg, ID 83440",
-      "phone": "123-456-7890",
-      "webisteurl": "https://www.rexburg.org",
-      "imageurl": "images/exmaple.jpg",
+      "name": "Einstein Bros Bagels",
+      "address": "11977 Herriman Main St, Herriman, UT 84096",
+      "phone": "763-592-2200",
+      "websiteurl": "https://www.einsteinbros.com",
+      "imageurl": "images/einsteinbagels.webp",
       "membershiplevel": "gold"
     }
   ]

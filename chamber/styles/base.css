@@ -444,3 +444,87 @@ footer {
   background-color: var(--light);
   padding: 1rem;
 }
+
+/* DIRECTORY PAGE */
+#directory-main {
+  background-color: var(--light);
+  margin: 1rem;
+}
+
+#directoryh2 {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+  font-size: xx-large;
+  border-bottom: 2px solid var(--mid-orange);
+  width: 300px;
+}
+
+#directory-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#directory-buttons h3 {
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  border: 1px solid var(--dark);
+  border-radius: 0.5rem;
+}
+
+.listheadhide {
+  display: none;
+}
+
+.listheadshow {
+  display: flex;
+}
+
+.listheadshow p {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.directory-grid .directory-card {
+  border: 1px solid var(--dark);
+  text-align: center;
+  background-color: var(--light);
+  margin: 1rem;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 3px var(--dark);
+}
+
+.directory-list {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.directory-list .directory-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  /* border: 1px solid var(--dark); */
+  /* text-align: center; */
+  /* background-color: var(--light); */
+  /* margin: 1rem; */
+  /* padding: 0.5rem; */
+  /* box-shadow: 3px 3px 3px var(--dark); */
+}
+
+.directory-list img {
+  display: none;
+}
+
+.directory-card p a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.directory-card img {
+  width: 200px;
+}

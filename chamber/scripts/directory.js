@@ -1,37 +1,50 @@
-// "name": "Example Name 1",
-// "address": "123 Main Street, Rexburg, ID 83440",
-// "phone": "123-456-7890",
-// "webisteurl": "https://www.rexburg.org",
-// "imageurl": "images/exmaple.jpg",
-// "membershiplevel": "gold"
-
-const url =
-  "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
-const cards = document.querySelector("#cards");
-
-function displayProphets(prophets) {
-  prophets.forEach((prophet) => {
+const url = "data/members.json";
+const directorycards = document.querySelector("#directory-cards");
+function displayMembers(members) {
+  members.forEach((member) => {
     let section = document.createElement("section");
-    section.classList.add("card");
+    section.classList.add("directory-card");
     let sectionHTML = `
-    <h3>${prophet.name} ${prophet.lastname}</h3>
-    <p>Date of Birth: ${prophet.birthdate}</p>
-    <p>Place of Birth: ${prophet.birthplace}</p>
-    <img src="${prophet.imageurl}" alt="${prophet.name} ${prophet.lastname}" loading="lazy"/>`;
+    <p><a href="${member.websiteurl}">${member.name}</a></p>
+    <p>${member.address}</p>
+    <p>${member.phone}</p>
+    <img src="${member.imageurl}" alt="${member.name}" loading="lazy" width="200"/>`;
     section.innerHTML = sectionHTML;
-    cards.appendChild(section);
+    directorycards.appendChild(section);
   });
 }
-
-async function getProphetData() {
+async function getMemberData() {
   const response = await fetch(url);
   if (response.ok) {
     const data = await response.json();
-    // console.table(data.prophets);
-    displayProphets(data.prophets);
+    console.table(data.members);
+    displayMembers(data.members);
   } else {
     console.error("Response Invalid");
   }
 }
+getMemberData();
 
-getProphetData();
+const gridbutton = document.querySelector("#d-gridbutton");
+const listbutton = document.querySelector("#d-listbutton");
+const listhead = document.querySelector("#directory-listhead");
+gridbutton.addEventListener("click", () => {
+  if (directorycards.classList.contains("directory-grid")) {
+    return;
+  } else {
+    directorycards.classList.toggle("directory-grid");
+    directorycards.classList.toggle("directory-list");
+    listhead.classList.toggle("listheadhide");
+    listhead.classList.toggle("listheadshow");
+  }
+});
+listbutton.addEventListener("click", () => {
+  if (directorycards.classList.contains("directory-list")) {
+    return;
+  } else {
+    directorycards.classList.toggle("directory-grid");
+    directorycards.classList.toggle("directory-list");
+    listhead.classList.toggle("listheadhide");
+    listhead.classList.toggle("listheadshow");
+  }
+});

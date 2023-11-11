@@ -38,7 +38,7 @@
     <!-- SCRIPTS -->
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
@@ -65,7 +65,7 @@
         <li id="modeSwitch" class="navlist dark-mode">
           <p>Dark Mode</p>
           <label class="switch">
-            <input type="checkbox" />
+            <input id="directory-checkbox" type="checkbox" />
             <span class="slider round"></span>
           </label>
         </li>
@@ -74,14 +74,17 @@
     </header>
 
     <main id="directory-main">
-      <div id="main-cards">
-        <!-- <section>
-              <p>(name)</p>
-              <p>(address)</p>
-              <p>(phone number)</p>
-              <img src="#" alt="(name)" loading="lazy"/>
-              <p>(membership level)</p>
-            </section> -->
+      <h2 id="directoryh2">Directory</h2>
+      <section id="directory-buttons">
+        <h3 id="d-gridbutton">Grid</h3>
+        <h3 id="d-listbutton">List</h3>
+      </section>
+      <div id="directory-cards" class="directory-grid">
+        <section id="directory-listhead" class="directory-card listheadhide">
+          <p>Name</p>
+          <p>Address</p>
+          <p>Phone</p>
+        </section>
       </div>
     </main>
 
