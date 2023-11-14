@@ -30,7 +30,7 @@
 
   #hero {
     width: 100%;
-    grid-template: 150px 150px / 1fr;
+    grid-template: auto auto / 1fr;
     overflow: hidden;
   }
 
