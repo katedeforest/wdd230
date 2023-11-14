@@ -152,6 +152,26 @@ ol li a {
   padding: 1rem;
 }
 
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.information p {
+  text-align: center;
+}
+
+#weather-icon {
+  background-color: #57756d;
+  padding: 1rem;
+  border-radius: 3rem;
+  opacity: 50%;
+}
+
+/* .visits {
+  border-top: 1px solid #1f271b;
+} */
+
 iframe {
   width: 100%;
   border: 0;

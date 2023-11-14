@@ -1,0 +1,30 @@
+{
+  "coord": { "lon": -111.9531, "lat": 43.83 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 55.67,
+    "feels_like": 51.98,
+    "temp_min": 53.49,
+    "temp_max": 57.25,
+    "pressure": 1018,
+    "humidity": 22
+  },
+  "visibility": 10000,
+  "wind": { "speed": 16.11, "deg": 230, "gust": 25.32 },
+  "clouds": { "all": 0 },
+  "dt": 1700002453,
+  "sys": {
+    "type": 1,
+    "id": 5735,
+    "country": "US",
+    "sunrise": 1699971656,
+    "sunset": 1700006623
+  },
+  "timezone": -25200,
+  "id": 5599930,
+  "name": "Madison",
+  "cod": 200
+}

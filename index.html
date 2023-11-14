@@ -34,6 +34,7 @@
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/site-visits.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
@@ -87,7 +88,7 @@
         </section>
       </section>
       <h2>WDD 230: Web Frontend Development</h2>
-      <section class="card">
+      <section class="card activities">
         <h3>Learning Activities</h3>
         <ol>
           <li><a href="lesson01/holygrail.html">Holy Grail Layout</a></li>
@@ -113,16 +114,26 @@
           <li><a></a></li>
         </ol>
       </section>
-      <section class="card">
+      <section class="card information">
         <h3>Information</h3>
         <p class="location">Rexburg, Idaho</p>
-        <p class="weather">Weather: 30&deg; Snow</p>
+        <p>
+          <img
+            id="weather-icon"
+            src="https://openweathermap.org/img/wn/01d.png"
+            alt="clear sky"
+          />
+        </p>
+        <p id="weather-desc">clear sky</p>
+        <p id="weather-temp">55°F | 13 mph wind</p>
+        <p>•••</p>
         <p class="visits">Visit Count: <span id="visitcount"></span></p>
       </section>
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48657.76806796504!2d-111.759937437891!3d40.33989458396125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1696138090021!5m2!1sen!2sus"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.90046188976!2d-111.82938238394826!3d43.83004304988106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1700006235571!5m2!1sen!2sus"
         width="600"
         height="450"
+        style="border: 0"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
