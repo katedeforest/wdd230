@@ -162,10 +162,9 @@ ol li a {
 }
 
 #weather-icon {
-  background-color: #57756d;
   padding: 1rem;
-  border-radius: 3rem;
-  opacity: 50%;
+  border: 1px solid #1f271b;
+  border-radius: 2rem;
 }
 
 /* .visits {
