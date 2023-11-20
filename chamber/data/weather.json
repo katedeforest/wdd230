@@ -1,0 +1,35 @@
+{
+  "coord": { "lon": -112.0711, "lat": 40.4969 },
+  "weather": [
+    {
+      "id": 802,
+      "main": "Clouds",
+      "description": "scattered clouds",
+      "icon": "03d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 37.47,
+    "feels_like": 27.59,
+    "temp_min": 33.19,
+    "temp_max": 39.49,
+    "pressure": 1032,
+    "humidity": 68
+  },
+  "visibility": 10000,
+  "wind": { "speed": 18.41, "deg": 320, "gust": 28.77 },
+  "clouds": { "all": 40 },
+  "dt": 1700506818,
+  "sys": {
+    "type": 2,
+    "id": 58423,
+    "country": "US",
+    "sunrise": 1700490021,
+    "sunset": 1700525264
+  },
+  "timezone": -25200,
+  "id": 5775782,
+  "name": "Herriman",
+  "cod": 200
+}

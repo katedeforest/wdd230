@@ -13,8 +13,8 @@ function showWindChill(temp, speed) {
   windChillSpan.textContent = message;
 }
 
-const tempuratureSpan = document.querySelector(".temp");
-const windspeedSpan = document.querySelector(".speed");
+const tempuratureSpan = document.querySelector("#temp");
+const windspeedSpan = document.querySelector("#speed");
 const tempurature = parseInt(tempuratureSpan.textContent);
 const windspeed = parseInt(windspeedSpan.textContent);
 

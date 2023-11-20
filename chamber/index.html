@@ -38,7 +38,8 @@
     <!-- SCRIPTS -->
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <!-- <script src="scripts/windchill.js" defer></script> -->
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
@@ -111,15 +112,16 @@
       <section class="card weather">
         <h2>Weather</h2>
         <section class="weather-grid">
-          <p class="sky-sym">&#9728;</p>
-          <p class="tempurature"><span class="temp">35</span>&deg;F</p>
-          <p class="sky">Partly Cloudy</p>
-          <p class="humidity">Humidity:</p>
-          <p class="hum-perc">-&percnt;</p>
-          <p class="wind-speed">Wind Speed:</p>
-          <p class="speed-mph"><span class="speed">5</span>mph</p>
-          <p class="wind-chill">Wind Chill:</p>
-          <p class="chill-perc"><span class="chill">-</span></p>
+          <p class="sky-icon left-side"><img id="sky-icon" src="#" alt="" /></p>
+          <!-- <p class="sky-icon">&#9728;</p> -->
+          <p class="right-side"><span id="temp">38</span>&deg;F</p>
+          <p id="description" class="right-side">-</p>
+          <p class="left-side">Humidity:</p>
+          <p class="right-side"><span id="humidity"></span>&percnt;</p>
+          <p class="left-side">Wind Speed:</p>
+          <p class="right-side"><span id="speed">12</span> mph</p>
+          <p class="left-side">Wind Chill:</p>
+          <p class="chill-perc right-side"><span class="chill">-</span></p>
         </section>
       </section>
 

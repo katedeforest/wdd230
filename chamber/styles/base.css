@@ -235,17 +235,17 @@ body {
   grid-template: auto auto auto auto / 1fr 1fr;
 }
 
-.sky-sym {
-  grid-row: 1/3;
+.left-side {
+  text-align: right;
   grid-column: 1/2;
-  font-size: xx-large;
 }
 
-.sky-sym,
-.humidity,
-.wind-speed,
-.wind-chill {
-  text-align: right;
+.right-side {
+  grid-column: 2/3;
+}
+
+.sky-icon {
+  grid-row: 1/3;
 }
 
 .weather-grid p {
