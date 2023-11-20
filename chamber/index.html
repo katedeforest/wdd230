@@ -40,6 +40,7 @@
     <script src="scripts/mode.js" defer></script>
     <!-- <script src="scripts/windchill.js" defer></script> -->
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
@@ -95,6 +96,11 @@
         <p id="hero-label"></p>
       </section>
 
+      <!-- BANNER -->
+      <section id="home-banner">
+        <h2></h2>
+      </section>
+
       <!-- CURRENT EVENTS -->
       <section class="card cur-events">
         <h2>Current Events</h2>
@@ -111,8 +117,10 @@
       <!-- WEATHER -->
       <section class="card weather">
         <h2>Weather</h2>
-        <section class="weather-grid">
-          <p class="sky-icon left-side"><img id="sky-icon" src="#" alt="" /></p>
+        <section id="weather-grid">
+          <p class="sky-icon left-side">
+            <img id="sky-icon" src="images/weatherplaceholder.webp" alt="" />
+          </p>
           <!-- <p class="sky-icon">&#9728;</p> -->
           <p class="right-side"><span id="temp">38</span>&deg;F</p>
           <p id="description" class="right-side">-</p>
@@ -121,8 +129,9 @@
           <p class="left-side">Wind Speed:</p>
           <p class="right-side"><span id="speed">12</span> mph</p>
           <p class="left-side">Wind Chill:</p>
-          <p class="chill-perc right-side"><span class="chill">-</span></p>
+          <p class="chill-perc right-side"><span id="chill">-</span></p>
         </section>
+        <section id="forecast"></section>
       </section>
 
       <!-- SPOTLIGHTS -->

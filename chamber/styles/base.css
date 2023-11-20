@@ -230,9 +230,10 @@ body {
   border-bottom: 1px solid var(--mid-orange);
 }
 
-.weather-grid {
+#weather-grid {
   display: grid;
   grid-template: auto auto auto auto / 1fr 1fr;
+  grid-gap: 0.5rem;
 }
 
 .left-side {
@@ -248,8 +249,9 @@ body {
   grid-row: 1/3;
 }
 
-.weather-grid p {
-  padding: 0 0.25rem;
+#weather-grid p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .spotlight {
