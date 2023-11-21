@@ -38,16 +38,16 @@
     <!-- SCRIPTS -->
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
-    <!-- <script src="scripts/windchill.js" defer></script> -->
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
       <img id="logo" src="images/logo.webp" alt="favicon, H" />
       <h1 id="title">Herriman Chamber of Commerce</h1>
 
-      <button class="menu-hide">&#9747;</button>
+      <button class="menu-hide">&#9932;</button>
       <button class="menu-show showing">&equiv;</button>
       <!-- <nav id="chamber-nav"> -->
       <ul id="nav-menu">
@@ -76,6 +76,13 @@
     </header>
 
     <main id="home-main">
+      <!-- BANNER -->
+      <section id="home-banner">
+        <button id="hbanner-button">&#9932;</button>
+        <h3>Chamber of Commerce Meet and Greet</h3>
+        <p>Wednesdays at 7pm</p>
+      </section>
+
       <!-- HERO -->
       <section id="hero">
         <picture id="hero-pic">
@@ -92,13 +99,8 @@
         src="images/HerrimanCityHall.webp"
         alt="Chamber Hero Image"
       /> -->
-        <h3 id="hero-action"><a href="#">JOIN THE CHAMBER</a></h3>
+        <h3 id="hero-action"><a href="join.html">JOIN THE CHAMBER</a></h3>
         <p id="hero-label"></p>
-      </section>
-
-      <!-- BANNER -->
-      <section id="home-banner">
-        <h2></h2>
       </section>
 
       <!-- CURRENT EVENTS -->
@@ -180,7 +182,13 @@
       <section class="contact">
         <p>info@herrimanchamber.com</p>
         <p>(801) 446-5323</p>
-        <p class="location">Location Map</p>
+        <p class="location">
+          <a
+            href="https://www.google.com/maps/place/Herriman,+UT+84096/@40.4968845,-112.0710874,13z/data=!3m1!4b1!4m6!3m5!1s0x8752837ff975dc3d:0xb23dcb217417201e!8m2!3d40.5141147!4d-112.0329938!16zL20vMDEwZnEx?entry=ttu"
+            target="_blank"
+            >Location Map</a
+          >
+        </p>
       </section>
 
       <p class="base-info">

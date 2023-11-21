@@ -9,7 +9,6 @@ const ONE_DAY = 24 * 60 * 60 * 1000;
 
 function displayForecast(forecastData) {
   // Get dates for next three days
-  console.log(forecastData);
   let dates = [];
   let mydate = new Date();
   for (let i = 0; i < 3; i++) {
@@ -17,7 +16,6 @@ function displayForecast(forecastData) {
     nextdate = mydate.toISOString().slice(0, 10);
     dates.push(nextdate);
   }
-  console.log(dates);
 
   // Find the object with the highest temperature for each day
   highTemps = dates.map((date) =>
@@ -35,8 +33,6 @@ function displayForecast(forecastData) {
         currentObj.main.temp < lowObj.main.temp ? currentObj : lowObj
       )
   );
-  console.log(highTemps);
-  console.log(lowTemps);
 
   // Add the forecast information to the HTML document
   weatherElt = document.querySelector("#forecast");

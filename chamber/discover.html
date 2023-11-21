@@ -42,13 +42,14 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
     <script src="scripts/welcome.js" defer></script>
+    <script src="scripts/mode-disc.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
       <img id="logo" src="images/logo.webp" alt="favicon, H" />
       <h1 id="title">Herriman Chamber of Commerce</h1>
 
-      <button class="menu-hide">&#9747;</button>
+      <button class="menu-hide">&#9932;</button>
       <button class="menu-show showing">&equiv;</button>
 
       <ul id="nav-menu">
@@ -78,12 +79,12 @@
     <main id="discover-main">
       <section id="side-bar">
         <!-- WELCOME MESSAGE -->
-        <section class="welc side-sec">
+        <section id="welcome" class="welc side-sec">
           <h2><span id="welcome-message">welcome</span></h2>
         </section>
 
         <!-- Demographics -->
-        <section class="demo side-sec">
+        <section id="demographics" class="demo side-sec">
           <h2>Demographics</h2>
           <ul>
             <li>Households: 12,211 (2020)</li>
@@ -342,7 +343,13 @@
       <section class="contact">
         <p>info@herrimanchamber.com</p>
         <p>(801) 446-5323</p>
-        <p class="location">Location Map</p>
+        <p class="location">
+          <a
+            href="https://www.google.com/maps/place/Herriman,+UT+84096/@40.4968845,-112.0710874,13z/data=!3m1!4b1!4m6!3m5!1s0x8752837ff975dc3d:0xb23dcb217417201e!8m2!3d40.5141147!4d-112.0329938!16zL20vMDEwZnEx?entry=ttu"
+            target="_blank"
+            >Location Map</a
+          >
+        </p>
       </section>
 
       <p class="base-info">

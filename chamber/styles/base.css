@@ -161,12 +161,37 @@ body {
 /* main */
 #home-main {
   margin: 0;
-  grid-template: auto auto auto auto / 1fr;
+  grid-template: auto auto auto auto auto / 1fr;
+}
+
+/* banner */
+#home-banner {
+  display: none;
+  position: relative;
+  grid-row: 1/2;
+  background-color: var(--mid-orange);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#home-banner h3,
+#home-banner p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+#hbanner-button {
+  position: absolute;
+  top: 1.125rem;
+  left: 1rem;
+  background-color: var(--light);
+  border: 1px solid var(--mid-orange);
+  color: var(--mid-orange);
 }
 
 /* hero */
 #hero {
-  grid-row: 1/2;
+  grid-row: 2/3;
   grid-column: 1/2;
   display: grid;
   grid-template: 94px 94px / 1fr;
@@ -318,6 +343,11 @@ footer {
 
 .contact p {
   margin: 0.25rem 0;
+}
+
+.contact p a {
+  text-decoration: none;
+  color: var(--dark);
 }
 
 .base-info {
