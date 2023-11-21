@@ -8,7 +8,7 @@ function displayMembers(members) {
     <p><a href="${member.websiteurl}">${member.name}</a></p>
     <p>${member.address}</p>
     <p>${member.phone}</p>
-    <img src="${member.imageurl}" alt="${member.name}" loading="lazy" width="200"/>`;
+    <img src="${member.imageurl}" alt="${member.name}" width="200"/>`;
     section.innerHTML = sectionHTML;
     directorycards.appendChild(section);
   });
