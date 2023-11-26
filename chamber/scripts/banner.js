@@ -7,10 +7,12 @@ button.addEventListener("click", () => {
 });
 
 // Only show banner M-W
-const weekDay = new Date().getDay();
-console.log(weekDay);
+const newDate = new Date();
+console.log(newDate);
+const weekday = newDate.getDay();
+console.log(weekday);
 
-if (weekDay > 0) {
+if ((weekday > 0) & (weekday < 4)) {
   banner.style.display = "grid";
   console.log("show");
 } else {

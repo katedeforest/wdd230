@@ -39,6 +39,7 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/mode.js" defer></script>
     <script src="scripts/join.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header id="chamber-header">
@@ -142,7 +143,9 @@
                 <textarea id="description" name="description"></textarea>
               </label>
               <input id="currentdate" name="currentdate" type="hidden" />
-              <button type="submit">Join the Chamber</button>
+              <button type="submit" onclick="window.open('./thankyou.html')">
+                Join the Chamber
+              </button>
             </fieldset>
           </form>
         </section>

@@ -340,7 +340,6 @@ footer {
 }
 
 .contact p a {
-  text-decoration: none;
   color: var(--dark);
 }
 
@@ -374,7 +373,6 @@ footer {
   padding: 0.5rem;
   width: 90%;
   background-color: var(--light);
-  border-radius: 1rem;
 }
 
 .welc {
@@ -400,7 +398,7 @@ footer {
   padding: 1rem;
   width: 90%;
   background-color: var(--light);
-  border-radius: 1rem;
+
   justify-content: center;
 }
 
@@ -587,4 +585,25 @@ footer {
 
 .directory-card img {
   width: 200px;
+}
+
+/* THANK YOU PAGE */
+#thankyou-sec {
+  margin: 1rem auto;
+  background-color: var(--light);
+  width: 80%;
+  height: 500px;
+}
+
+#thankyou-message {
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--mid-orange);
+}
+
+#thankyou-sec p {
+  text-align: center;
 }
