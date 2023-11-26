@@ -106,6 +106,10 @@
     grid-gap: 1rem;
   }
 
+  .disc-sec img:hover {
+    box-shadow: 2px 2px 2px var(--mid-orange);
+  }
+
   /* FOOTER */
   footer {
     grid-template: auto auto / 1fr 2fr 3fr;

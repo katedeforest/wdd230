@@ -412,10 +412,6 @@ footer {
   margin-bottom: -1rem;
 }
 
-.disc-sec img:hover {
-  box-shadow: 2px 2px 2px var(--mid-orange);
-}
-
 /* JOIN PAGE */
 #join-main {
   display: grid;
