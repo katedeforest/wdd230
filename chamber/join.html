@@ -74,112 +74,117 @@
     </header>
 
     <main id="join-main">
-      <section class="join-sec">
-        <form method="get" action="/thankyou.html" id="join-form">
-          <fieldset id="join-fieldset">
-            <label class="field"
-              >First Name*
-              <input id="firstname" name="firstname" type="text" required
-            /></label>
-            <label class="field"
-              >Last Name*
-              <input id="lastname" name="lastname" type="text" required
-            /></label>
-            <label class="field"
-              >Title or Position
-              <input
-                id="position"
-                name="position"
-                type="text"
-                pattern="[A-Za-z\s\-]{7,}"
-            /></label>
-            <label class="field"
-              >Email*
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="you@example.com"
-                required
-                autocomplete="email"
-            /></label>
-            <label class="field"
-              >Mobile Phone Number*
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                required
-                autocomplete="tel"
-            /></label>
-            <label class="field"
-              >Business/Organization Name*
-              <input id="business" name="business" type="text" required
-            /></label>
-            <p>Membership Level</p>
-            <label class="levelselect"
-              ><input
-                type="radio"
-                name="level"
-                class="level"
-              />Non-Profit</label
-            >
-            <label class="levelselect"
-              ><input type="radio" name="level" class="level" />Bronze</label
-            >
-            <label class="levelselect"
-              ><input type="radio" name="level" class="level" />Silver</label
-            >
-            <label class="levelselect"
-              ><input type="radio" name="level" class="level" />Gold</label
-            >
-            <label class="description"
-              >Description of Business
-              <textarea id="description" name="description"></textarea>
-            </label>
-            <input id="currentdate" name="currentdate" type="hidden" />
-            <button type="submit">Join the Chamber</button>
-          </fieldset>
-        </form>
+      <section id="join-title">
+        <h2 id="joinh2">Join the Chamber</h2>
       </section>
+      <section id="formgroup">
+        <section class="join-sec">
+          <form method="get" action="/thankyou.html" id="join-form">
+            <fieldset id="join-fieldset">
+              <label class="field"
+                >First Name*
+                <input id="firstname" name="firstname" type="text" required
+              /></label>
+              <label class="field"
+                >Last Name*
+                <input id="lastname" name="lastname" type="text" required
+              /></label>
+              <label class="field"
+                >Title or Position
+                <input
+                  id="position"
+                  name="position"
+                  type="text"
+                  pattern="[A-Za-z\s\-]{7,}"
+              /></label>
+              <label class="field"
+                >Email*
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@example.com"
+                  required
+                  autocomplete="email"
+              /></label>
+              <label class="field"
+                >Mobile Phone Number*
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  required
+                  autocomplete="tel"
+              /></label>
+              <label class="field"
+                >Business/Organization Name*
+                <input id="business" name="business" type="text" required
+              /></label>
+              <p>Membership Level</p>
+              <label class="levelselect"
+                ><input
+                  type="radio"
+                  name="level"
+                  class="level"
+                />Non-Profit</label
+              >
+              <label class="levelselect"
+                ><input type="radio" name="level" class="level" />Bronze</label
+              >
+              <label class="levelselect"
+                ><input type="radio" name="level" class="level" />Silver</label
+              >
+              <label class="levelselect"
+                ><input type="radio" name="level" class="level" />Gold</label
+              >
+              <label class="description"
+                >Description of Business
+                <textarea id="description" name="description"></textarea>
+              </label>
+              <input id="currentdate" name="currentdate" type="hidden" />
+              <button type="submit">Join the Chamber</button>
+            </fieldset>
+          </form>
+        </section>
 
-      <section class="join-sec">
-        <section id="memberships">
-          <h2>Membership Levels Benefits</h2>
-          <section class="np level">
-            <h3>Non-Profit Membership</h3>
-            <ul>
-              <li>For non profit organizations</li>
-              <li>No Fee</li>
-            </ul>
-          </section>
-          <section class="bronze level">
-            <h3>Bronze Membership</h3>
-            <ul>
-              <li>15% discount on events</li>
-              <li>10% discount on advertising</li>
-              <li>Fee of $50/month</li>
-            </ul>
-          </section>
-          <section class="silver level">
-            <h3>Silver Membership</h3>
-            <ul>
-              <li>25% discount on events</li>
-              <li>15% discount on advertising</li>
-              <li>Free participation in the trade fair</li>
-              <li>Fee of $100/month</li>
-            </ul>
-          </section>
-          <section class="gold level">
-            <h3>Gold Membership</h3>
-            <ul>
-              <li>50% discount on events</li>
-              <li>50% discount on advertising</li>
-              <li>Free participation in the trade fair</li>
-              <li>5 free featured ads per year</li>
-              <li>1 free training per year</li>
-              <li>Fee of $250/month</li>
-            </ul>
+        <section class="join-sec">
+          <section id="memberships">
+            <h2>Membership Levels Benefits</h2>
+            <section class="np level">
+              <h3>Non-Profit Membership</h3>
+              <ul>
+                <li>For non profit organizations</li>
+                <li>No Fee</li>
+              </ul>
+            </section>
+            <section class="bronze level">
+              <h3>Bronze Membership</h3>
+              <ul>
+                <li>15% discount on events</li>
+                <li>10% discount on advertising</li>
+                <li>Fee of $50/month</li>
+              </ul>
+            </section>
+            <section class="silver level">
+              <h3>Silver Membership</h3>
+              <ul>
+                <li>25% discount on events</li>
+                <li>15% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>Fee of $100/month</li>
+              </ul>
+            </section>
+            <section class="gold level">
+              <h3>Gold Membership</h3>
+              <ul>
+                <li>50% discount on events</li>
+                <li>50% discount on advertising</li>
+                <li>Free participation in the trade fair</li>
+                <li>5 free featured ads per year</li>
+                <li>1 free training per year</li>
+                <li>Fee of $250/month</li>
+              </ul>
+            </section>
           </section>
         </section>
       </section>

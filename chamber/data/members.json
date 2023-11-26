@@ -14,7 +14,7 @@
       "phone": "435-828-5374",
       "websiteurl": "https://www.acehardware.com/store-details/16976",
       "imageurl": "images/ace.webp",
-      "membershiplevel": "gold"
+      "membershiplevel": "silver"
     },
     {
       "name": "Copper Mountain Manual Therapy, LLC",
@@ -22,7 +22,7 @@
       "phone": "801-927-6933",
       "websiteurl": "https://www.coppermountainmanualtherapy.com",
       "imageurl": "images/cmmt.webp",
-      "membershiplevel": "gold"
+      "membershiplevel": "bronze"
     },
     {
       "name": "Beehive Homes of Herriman",
@@ -30,7 +30,7 @@
       "phone": "801-703-4779",
       "websiteurl": "https://beehivehomes.com/locations/herriman/",
       "imageurl": "images/beehive.webp",
-      "membershiplevel": "gold"
+      "membershiplevel": "silver"
     },
     {
       "name": "Cafe Rio Mexican Grill",
@@ -54,7 +54,7 @@
       "phone": "763-592-2200",
       "websiteurl": "https://www.einsteinbros.com",
       "imageurl": "images/einsteinbagels.webp",
-      "membershiplevel": "gold"
+      "membershiplevel": "bronze"
     }
   ]
 }

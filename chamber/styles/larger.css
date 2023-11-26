@@ -28,16 +28,6 @@
     display: none;
   }
 
-  #hero {
-    width: 100%;
-    grid-template: auto auto / 1fr;
-    overflow: hidden;
-  }
-
-  #hero-action a {
-    font-size: large;
-  }
-
   /* MAIN PAGE */
   #home-main {
     grid-template: auto auto auto / 0.5fr 2fr 1fr 0.5fr;
@@ -50,15 +40,14 @@
   #hero {
     grid-row: 2/3;
     grid-column: 2/4;
+    width: 100%;
+    display: grid;
+    grid-template: auto auto / 1fr;
+    overflow: hidden;
   }
 
-  #hero-label {
-    width: 7%;
-    top: 120px;
-  }
-
-  #hero-label::before {
-    content: "Large";
+  #hero-action a {
+    font-size: large;
   }
 
   .card {
@@ -88,11 +77,6 @@
     grid-row: 1/2;
     grid-column: 1/4;
     border: none;
-  }
-
-  .spotlight {
-    border-left: none;
-    border-top: 1px solid var(--mid-orange);
   }
 
   /* DISCOVER PAGE */
