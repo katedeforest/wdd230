@@ -1,0 +1,75 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Lobster+Two&family=Poppins&family=Raleway&display=swap"); */
+
+/* Nunito Sans */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap");
+/* all-round-gothic */
+@import url("https://use.typekit.net/hmn4rfb.css");
+
+:root {
+  --dark: #0f0f0f;
+  --teal: #2ec4b6;
+  --light: #ffffff;
+  --orange: #ff9f1c;
+  --shadow-orange: #ffbf69;
+  --shadow-teal: #cbf3f0;
+}
+
+header {
+  margin: 0;
+  padding: 1rem;
+  background-color: var(--teal);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  /* font-weight: 400;
+  font-style: normal; */
+}
+
+h1 {
+  font-family: "all-round-gothic", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,
+h3 {
+  font-family: all-round-gothic, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* h3 {
+  font-family: "Courgette", serif;
+  font-size: x-large;
+} */
+
+.card {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 90%;
+  background-color: var(--shadow-teal);
+  border-left: 30px solid var(--orange);
+}
+
+.wires {
+  height: auto;
+}
+
+.wiregrid {
+  display: grid;
+  grid-template: 450 350 / 1fr;
+  grid-gap: 10px;
+}
+
+.one {
+  height: 80%;
+}
+
+.two {
+  height: 80%;
+  padding-top: 1.5rem;
+}

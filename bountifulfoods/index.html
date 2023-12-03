@@ -1,41 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META CONTENT -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Frontend Development - Katherine DeForest - Chamber of Commerce Main Page"
+    />
+    <meta name="author" content="Katherine DeForest" />
+    <!-- SOCIAL MEDIA META CONTENT -->
+    <meta property="og:url" content="https://katedeforest.github.io/wdd230/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Home | Herriman Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+    />
+    <meta
+      property="og:description"
+      content="Web Frontend Development - Katherine DeForest - Chamber of Commerce Main Page"
+    />
+    <!-- TITLE -->
+    <title>Home | Bountiful Foods</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.png" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <!-- SCRIPTS -->
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/modified.js" defer></script>
   </head>
   <body>
-    <!-- contemporary, exciting landing page providing images of fruit and produce including specialty fruit drinks
-        that are ready to serve and made fresh. The page must contain the following.
+    <header>
+      <!-- Readily available navigation which is consistent across all pages. The navigation uses a "hamburger menu" in
+        smaller resolutions. -->
+      <img
+        src="images/orange-slice.png"
+        alt="Bountiful Foods Logo"
+        id="logo-icon"
+      />
+      <h1 id="logo-type">Bountiful Foods</h1>
+      <button class="menu-hide">&#9932;</button>
+      <button class="menu-show showing">&equiv;</button>
+      <!-- <nav id="chamber-nav"> -->
+      <ul id="header-nav">
+        <li class="navlist">
+          <a href="index.html" id="current" class="link">Home</a>
+        </li>
+        <li class="navlist">
+          <a href="order.html" class="link">Order</a>
+        </li>
+        <li class="navlist">
+          <a href="about.html" class="link">About Us</a>
+        </li>
+      </ul>
+    </header>
 
-        Readily available navigation which is consistent across all pages. The navigation uses a "hamburger menu" in
-        smaller resolutions.
+    <main id="home-main">
+      <!-- contemporary, exciting landing page providing images of fruit and produce including specialty fruit drinks
+      that are ready to serve and made fresh.  -->
 
-        Summary information about any coastal area or areas in the southern California coast of your choosing.
+      <section id="home-hero">
+        <img
+          src="images/hero-small.webp"
+          alt="smoothie and fruit"
+          id="hero-img"
+        />
+        <!-- A call to action to make your own fruit drink mix. This link can link to the 📄Order Drink page. -->
+        <h3 id="hero-action"><a href="order.html">Order Now</a></h3>
+      </section>
 
-        A call to action to make your own fruit drink mix. This link can link to the 📄Order Drink page.
+      <!-- Include an information card about the total number of specialty drinks that the current user has submitted
+        from the Order Drink page form. This information should just be stored locally, with the user's agent (browser). -->
+      <section id="home-orders">
+        <h3>Orders Made:</h3>
+        <h3 id="num-orders">9</h3>
+      </section>
 
-        Weather card(s) which summarize the current weather conditions for Carlsbad.
+      <!-- Summary information about any coastal area or areas in the southern California coast of your choosing. -->
+      <section id="home-areainfo">
+        <h2>Carlsbad</h2>
+        <p>
+          Carlsbad, located along the picturesque coastline of northern San
+          Diego County, California, is a vibrant city with a population of
+          around 115,000 people. Renowned for its stunning beaches, including
+          Carlsbad State Beach and South Carlsbad State Beach, the city is a
+          popular tourist destination. Carlsbad boasts a diverse economy, with a
+          focus on technology, tourism, healthcare, and manufacturing, including
+          the presence of the Carlsbad Research Center. Families are drawn to
+          the area for its excellent school system, served by the Carlsbad
+          Unified School District, and there are also higher education
+          opportunities at MiraCosta College. Beyond its beautiful natural
+          scenery, Carlsbad offers attractions such as LEGOLAND California
+          Resort, the Flower Fields at Carlsbad Ranch, and the historic Leo
+          Carrillo Ranch. The city enjoys a Mediterranean climate, with mild
+          winters and warm summers, making it an appealing year-round
+          destination for residents and visitors alike.
+        </p>
+      </section>
 
+      <section id="home-weather">
+        <!-- Weather card(s) which summarize the current weather conditions for Carlsbad.
         Use the Current Weather API at OpenWeather and include
             Current temperature
             Condition description
             Current conditions icon
-            Current humidity
-
-        Display a forecast for Carlsbad that displays the weather condition description and related icon at 9:00 AM
+            Current humidity -->
+        <section id="current-weather">
+          <p>Today</p>
+          <img src="" alt="Weather Icon" id="w-icon" />
+          <p id="w-description">Description</p>
+          <p>Tempurature: <span id="temp-span"></span></p>
+          <p>Humidity: <span id="humid-span"></span></p>
+        </section>
+        <!-- Display a forecast for Carlsbad that displays the weather condition description and related icon at 9:00 AM
         for the next three days (not including today). Use the 5-Day/3-Hour forecast from OpenWeather Links to an
-        external site.
+        external site. -->
+        <section id="forecastSection"></section>
+      </section>
+    </main>
 
-        Include an information card about the total number of specialty drinks that the current user has submitted
-        from the Order Drink page form. This information should just be stored locally, with the user's agent (browser).
- -->
-
-    <!-- FOOTER
-        Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.org Links to an external site. 
+    <footer>
+      <!-- FOOTER
+        Include a resource/attribution section in the footer that references outside content used in your site. 
+        At minimum that will include references to www.fruityvice.com and openweathermap.org 
         Social media links (at least three) (no account necessary).
         Include the last modified date of the page in the footer using JavaScript.
         Contact information including e-mail address, phone number and street address -->
+      <section id="footer-contact">
+        <p>contact@bountifulfoods.com</p>
+        <p>(123) 456-7890</p>
+        <p>2907 State St, Carlsbad, CA 92008</p>
+        <p>
+          <a href="https://www.facebook.com/">Facebook</a> |
+          <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+      </section>
+      <section id="footer-pageinfo">
+        <p>Resources:</p>
+        <p><a href="www.fruityvice.com">www.fruityvice.com</a></p>
+        <p><a href="openweathermap.org">openweathermap.org</a></p>
+        <p>Last Modified: <span id="last-modified-span"></span></p>
+      </section>
+    </footer>
   </body>
 </html>
