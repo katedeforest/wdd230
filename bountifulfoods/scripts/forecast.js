@@ -58,9 +58,6 @@ function forecast(forecastData) {
     }
   }
 
-  // Print the weather descriptions for the next three days
-  console.log(threeDaysat9AM);
-
   const forecastSection = document.querySelector("#forecastSection");
 
   for (i in threeDaysat9AM) {
