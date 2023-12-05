@@ -36,8 +36,7 @@
     <link rel="stylesheet" href="styles/large.css" />
     <!-- SCRIPTS -->
     <script src="scripts/hamburger-menu.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/fruit-choices.js" defer></script>
     <script src="scripts/modified-date.js" defer></script>
   </head>
   <body>
@@ -74,14 +73,11 @@
             <!-- The form requires the following items: 
             first name, email and phone number -->
             <label class="order-field"
-              >First Name:<input
-                id="firstname"
-                name="firstname"
-                type="text"
-                required
+              >First Name:          
+              <input id="firstname" name="firstname" type="text" required
             /></label>
             <label class="order-field"
-              >Email:
+              >Email:                   
               <input
                 id="email"
                 name="email"
@@ -91,7 +87,7 @@
                 autocomplete="email"
             /></label>
             <label class="order-field"
-              >Phone Number:
+              >Phone Number:  
               <input
                 id="phone"
                 name="phone"
@@ -105,30 +101,32 @@
                 If desired you can download the JSON file from https://www.fruityvice.com/ Links to an external
                 site. and use that locally in your site. -->
             <label class="order-field"
-              >Fruit (Choice 1):<select
-                id="choice1"
-                name="choice1"
-                class="choices"
-              ></select
+              >Fruit (Choice 1):            
+              <select id="choice1" name="choice1" class="choices"></select
             ></label>
+            <label class="order-field"
+              >Fruit (Choice 2):            
+              <select id="choice2" name="choice2" class="choices"></select
+            ></label>
+            <label class="order-field"
+              >Fruit (Choice 3):            
+              <select id="choice3" name="choice3" class="choices"></select
+            ></label>
+            <!-- Also, include an area that allows them to add special instructions if needed. (TEXTBOX) -->
+            <label class="order-field" id="instrctn-grp"
+              >Special Instructions (optional):
+              <textarea id="instructions" name="instructions"></textarea>
+            </label>
+            <!-- The form submission takes you to the Order Confirmation page to show you what you ordered. -->
+            <button type="submit" id="sub-button">Get My Drink</button>
+            <!--Mention in the form somewhere that payment is received when the drink is picked up.-->
+            <p>Payment is received when drink is picked up.</p>
           </fieldset>
         </form>
       </section>
-      <section class="order-sec"></section>
-      <!-- 
-        
-
-            three (3) select inputs that are populated with all the available fruit to put into a drink.(THREE DROPDOWNS, SAME LIST IN EACH)
-                Available fruit options must only come from this web service: https://www.fruityvice.com/ Links
-                to an external site. for full credit consideration. 
-                If desired you can download the JSON file from https://www.fruityvice.com/ Links to an external
-                site. and use that locally in your site.
-
-            Also, include an area that allows them to add special instructions if needed. (TEXTBOX)
-
-            Mention in the form somewhere that payment is received when the drink is picked up.
-
-        The form submission takes you to the Order Confirmation page to show you what you ordered. -->
+      <section class="order-sec">
+        <img src="#" alt="fruit and smoothie" />
+      </section>
     </main>
 
     <footer>

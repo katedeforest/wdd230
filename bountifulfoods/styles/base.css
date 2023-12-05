@@ -208,3 +208,46 @@ footer {
 #footer-pageinfo a {
   color: var(--light);
 }
+
+/* ORDER PAGE */
+#order-main {
+  display: grid;
+  grid-template: auto auto / 1fr;
+}
+
+.order-sec {
+  margin: 1rem;
+  background-color: var(--light);
+}
+
+#order-fieldset {
+  display: grid;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.order-field {
+  display: block;
+  padding: 1rem;
+}
+
+.order-field input {
+  text-align: right;
+}
+
+#instrctn-grp {
+  display: grid;
+}
+
+#instructions {
+  display: block;
+  justify-self: center;
+}
+
+#sub-button {
+  margin: 1rem;
+}
+
+#order-fieldset p {
+  padding: 1rem;
+}
