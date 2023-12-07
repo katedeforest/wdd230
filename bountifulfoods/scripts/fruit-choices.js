@@ -8,7 +8,6 @@ function populateDropdowns(data) {
     for (const fruitName of fruitNames) {
       let option = document.createElement("option");
       option.value = fruitName;
-      option.placeholder = "Fruit";
       option.textContent = fruitName;
       dropdown.appendChild(option);
     }

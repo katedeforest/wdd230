@@ -1,36 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META CONTENT -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Frontend Development - Katherine DeForest - Bountiful Foods Order Confirmation Page"
+    />
+    <meta name="author" content="Katherine DeForest" />
+    <!-- SOCIAL MEDIA META CONTENT -->
+    <meta
+      property="og:url"
+      content="https://katedeforest.github.io/wdd230/bountifulfoods/confirm.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Order Confirmation | Bountiful Foods" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1514995428455-447d4443fa7f?q=80&w=1807&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+    <meta
+      property="og:description"
+      content="Web Frontend Development - Katherine DeForest - Bountiful Foods Order Confirmation Page"
+    />
+    <!-- TITLE -->
+    <title>Order Confirmation | Bountiful Foods</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <!-- SCRIPTS -->
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/fruit-choices.js" defer></script>
+    <script src="scripts/modified-date.js" defer></script>
   </head>
   <body>
-    <!-- WAYFINDING FOR THIS PAGE SHOULD POINT TO ORDER PAGE -->
-    <!-- output area on this same page showing:
+    <header>
+      <!-- Readily available navigation which is consistent across all pages. The navigation uses a "hamburger menu" in
+        smaller resolutions. -->
+      <img
+        src="images/orange-slice.png"
+        alt="Bountiful Foods Logo"
+        id="logo-icon"
+      />
+      <h1 id="logo-type">Bountiful Foods</h1>
+      <button class="menu-hide">&#9932;</button>
+      <button class="menu-show showing">&equiv;</button>
+      <!-- <nav id="chamber-nav"> -->
+      <ul id="header-nav">
+        <li class="navlist">
+          <a href="index.html" class="link">Home</a>
+        </li>
+        <!-- WAYFINDING FOR THIS PAGE SHOULD POINT TO ORDER PAGE -->
+        <li class="navlist">
+          <a href="order.html" id="current" class="link">Order</a>
+        </li>
+        <li class="navlist">
+          <a href="about.html" class="link">About Us</a>
+        </li>
+      </ul>
+    </header>
 
-        the input values of the order (7 inputs = first name, email, phone, three selected fruits, and
-        special instructions),
-            Use the URL API to accomplish this as explained in W12 - Working with the URL API and not
-            local storage or some other method.
+    <main id="confirm-main">
+      <!-- output area on this same page showing:
+  
+          the input values of the order (7 inputs = first name, email, phone, three selected fruits, and
+          special instructions),
+              Use the URL API to accomplish this as explained in W12 - Working with the URL API and not
+              local storage or some other method.
+  
+          the order date, and 
+  
+          the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit
+          choices selected on the form. Again, use your fruityvice.JSON file to extract and sum up that information.
+  
+          Create an excellent user experience for the order confirmation page.
+              Thank the user for their order
+              Give the user an estimate for when they can pick up their drink.
+              Give the user a way to contact you if there is a problem.
+              Include a call to action for the user to leave a review on social media.
+              Consider examples of order confirmation pages by viewing the examples here:
+                  https://www.convertcart.com/blog/order-confirmation-page Links to an external site. -->
+    </main>
 
-        the order date, and 
-
-        the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit
-        choices selected on the form. Again, use your fruityvice.JSON file to extract and sum up that information.
-
-        Create an excellent user experience for the order confirmation page.
-            Thank the user for their order
-            Give the user an estimate for when they can pick up their drink.
-            Give the user a way to contact you if there is a problem.
-            Include a call to action for the user to leave a review on social media.
-            Consider examples of order confirmation pages by viewing the examples here:
-                https://www.convertcart.com/blog/order-confirmation-page Links to an external site. -->
-
-    <!-- FOOTER
-        Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.org Links to an external site. 
+    <footer>
+      <!-- FOOTER
+        Include a resource/attribution section in the footer that references outside content used in your site. 
+        At minimum that will include references to www.fruityvice.com and openweathermap.org 
         Social media links (at least three) (no account necessary).
         Include the last modified date of the page in the footer using JavaScript.
         Contact information including e-mail address, phone number and street address -->
+      <section id="footer-contact">
+        <p>contact@bountifulfoods.com</p>
+        <p>(123) 456-7890</p>
+        <p>2907 State St, Carlsbad, CA 92008</p>
+        <p>
+          <a href="https://www.facebook.com/">Facebook</a> |
+          <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+      </section>
+      <section id="footer-pageinfo">
+        <p>Resources:</p>
+        <p><a href="www.fruityvice.com">www.fruityvice.com</a></p>
+        <p><a href="openweathermap.org">openweathermap.org</a></p>
+        <p>Last Modified: <span id="last-modified-span"></span></p>
+      </section>
+    </footer>
   </body>
 </html>

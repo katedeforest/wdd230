@@ -1,5 +1,5 @@
 body {
-  background-color: indianred;
+  background-color: #bedbed;
   height: 775px;
   display: flex;
   justify-content: center;
@@ -9,4 +9,25 @@ body {
 h1 {
   color: white;
   font-size: 150px;
+}
+
+div.quote {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #bedbed;
+  border: 1px solid #777777;
+}
+
+main.three-col {
+  display: grid;
+  grid-template: 500px / 250px 2fr 1fr;
+  gap: 40px;
+  align-items: center;
+  border: 1px solid #777777;
+}
+
+section {
+  height: 400px;
+  border: 1px solid black;
 }

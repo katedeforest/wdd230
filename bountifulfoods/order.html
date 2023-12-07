@@ -14,7 +14,7 @@
     <!-- SOCIAL MEDIA META CONTENT -->
     <meta
       property="og:url"
-      content="https://katedeforest.github.io/wdd230/bountifulfoods/index.html"
+      content="https://katedeforest.github.io/wdd230/bountifulfoods/order.html"
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Order | Bountiful Foods" />
@@ -54,10 +54,10 @@
       <!-- <nav id="chamber-nav"> -->
       <ul id="header-nav">
         <li class="navlist">
-          <a href="index.html" id="current" class="link">Home</a>
+          <a href="index.html" class="link">Home</a>
         </li>
         <li class="navlist">
-          <a href="order.html" class="link">Order</a>
+          <a href="order.html" id="current" class="link">Order</a>
         </li>
         <li class="navlist">
           <a href="about.html" class="link">About Us</a>
@@ -67,17 +67,29 @@
 
     <main id="order-main">
       <section class="order-sec">
+        <!-- <img
+          src="images/vertical.jpg"
+          alt="fruit and smoothie"
+          id="order-img"
+        /> -->
+        <picture>
+          <source media="(min-width:700px)" srcset="images/vertical.jpg" />
+          <img src="images/horizontal4.jpg" alt="smoothies" id="order-img" />
+        </picture>
+      </section>
+      <section class="order-sec">
+        <h2>Create Your Order:</h2>
         <!-- a form that allows the user to order a specialty drink. -->
         <form method="get" action="confirm.html" id="order-form">
           <fieldset id="order-fieldset">
             <!-- The form requires the following items: 
             first name, email and phone number -->
             <label class="order-field"
-              >First Name:          
+              >First Name:                              
               <input id="firstname" name="firstname" type="text" required
             /></label>
             <label class="order-field"
-              >Email:                   
+              >Email:                                       
               <input
                 id="email"
                 name="email"
@@ -87,7 +99,7 @@
                 autocomplete="email"
             /></label>
             <label class="order-field"
-              >Phone Number:  
+              >Phone Number:                       
               <input
                 id="phone"
                 name="phone"
@@ -101,31 +113,34 @@
                 If desired you can download the JSON file from https://www.fruityvice.com/ Links to an external
                 site. and use that locally in your site. -->
             <label class="order-field"
-              >Fruit (Choice 1):            
-              <select id="choice1" name="choice1" class="choices"></select
-            ></label>
+              >Fruit (Choice 1):                            
+              <select id="choice1" name="choice1" class="choices">
+                <option value="" disabled selected>(select an option)</option>
+              </select></label
+            >
             <label class="order-field"
-              >Fruit (Choice 2):            
-              <select id="choice2" name="choice2" class="choices"></select
-            ></label>
+              >Fruit (Choice 2):                            
+              <select id="choice2" name="choice2" class="choices">
+                <option value="" disabled selected>(select an option)</option>
+              </select></label
+            >
             <label class="order-field"
-              >Fruit (Choice 3):            
-              <select id="choice3" name="choice3" class="choices"></select
-            ></label>
+              >Fruit (Choice 3):                            
+              <select id="choice3" name="choice3" class="choices">
+                <option value="" disabled selected>(select an option)</option>
+              </select></label
+            >
             <!-- Also, include an area that allows them to add special instructions if needed. (TEXTBOX) -->
             <label class="order-field" id="instrctn-grp"
               >Special Instructions (optional):
               <textarea id="instructions" name="instructions"></textarea>
             </label>
             <!-- The form submission takes you to the Order Confirmation page to show you what you ordered. -->
-            <button type="submit" id="sub-button">Get My Drink</button>
+            <button type="submit" id="sub-button">Get My Drink!</button>
             <!--Mention in the form somewhere that payment is received when the drink is picked up.-->
-            <p>Payment is received when drink is picked up.</p>
+            <p>(payment is received when drink is picked up)</p>
           </fieldset>
         </form>
-      </section>
-      <section class="order-sec">
-        <img src="#" alt="fruit and smoothie" />
       </section>
     </main>
 

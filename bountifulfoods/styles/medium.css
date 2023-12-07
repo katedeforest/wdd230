@@ -72,4 +72,13 @@
   .forecast {
     border-top: 2px solid var(--teal);
   }
+
+  #order-main {
+    grid-template: 90vh / 1fr 2fr;
+  }
+
+  #order-img {
+    width: auto;
+    height: 90vh;
+  }
 }
