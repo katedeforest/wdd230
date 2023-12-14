@@ -38,6 +38,7 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/fruit-choices.js" defer></script>
     <script src="scripts/modified-date.js" defer></script>
+    <script src="scripts/confirm.js" defer></script>
   </head>
   <body>
     <header>
@@ -67,25 +68,108 @@
     </header>
 
     <main id="confirm-main">
-      <!-- output area on this same page showing:
-  
-          the input values of the order (7 inputs = first name, email, phone, three selected fruits, and
-          special instructions),
-              Use the URL API to accomplish this as explained in W12 - Working with the URL API and not
-              local storage or some other method.
-  
-          the order date, and 
-  
-          the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit
-          choices selected on the form. Again, use your fruityvice.JSON file to extract and sum up that information.
-  
-          Create an excellent user experience for the order confirmation page.
-              Thank the user for their order
-              Give the user an estimate for when they can pick up their drink.
-              Give the user a way to contact you if there is a problem.
-              Include a call to action for the user to leave a review on social media.
-              Consider examples of order confirmation pages by viewing the examples here:
-                  https://www.convertcart.com/blog/order-confirmation-page Links to an external site. -->
+      <section id="confirm-header">
+        <!-- Thank the user for their order -->
+        <h2>Thank you!</h2>
+        <!-- Give the user an estimate for when they can pick up their drink. -->
+        <h3>
+          Your order will be ready in
+          <span id="time-left">15-20 minutes</span>.
+        </h3>
+      </section>
+
+      <!-- output area on this same page showing: -->
+      <section id="confirm-order">
+        <section id="confirm-action">
+          <!-- Include a call to action for the user to leave a review on social media. -->
+          <h3>Share Us On:</h3>
+          <p>
+            <a href="https://www.facebook.com">Facebook</a><br />
+            <a href="https://www.instagram.com">Instagram</a>
+          </p>
+        </section>
+        <section id="confirm-contact">
+          <!-- Give the user a way to contact you if there is a problem. -->
+          <h3>Contact</h3>
+          <p>contact@bountifulfoods.com</p>
+          <p>(123) 456-7890</p>
+        </section>
+
+        <section id="confirm-output">
+          <h2>Order Summary</h2>
+          <!-- the input values of the order (7 inputs = first name, email, phone, three selected fruits, and
+            special instructions),
+                Use the URL API to accomplish this as explained in W12 - Working with the URL API and not
+                local storage or some other method. -->
+          <table id="order-table">
+            <tr>
+              <th>Order Date:</th>
+              <td><span id="orderdate"></span></td>
+            </tr>
+            <tr>
+              <th>Name:</th>
+              <td><span id="yourname"></span></td>
+            </tr>
+            <tr>
+              <th>Email:</th>
+              <td><span id="youremail"></span></td>
+            </tr>
+            <tr>
+              <th>Phone Number:</th>
+              <td><span id="yourphone"></span></td>
+            </tr>
+            <tr>
+              <th rowspan="3">Fruit Choices:</th>
+              <td>
+                <span class="yourchoice1"></span>
+              </td>
+            </tr>
+            <tr>
+              <td><span class="yourchoice2"></span></td>
+            </tr>
+            <tr>
+              <td><span class="yourchoice3"></span></td>
+            </tr>
+            <tr>
+              <th>Special Instructions:</th>
+              <td><span id="yourinstructions"></span></td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="confirm-nutrition">
+          <h3>Nutrition Information</h3>
+          <p>
+            for a <span class="yourchoice1"></span>,
+            <span class="yourchoice2"></span>, and
+            <span class="yourchoice3"></span> smoothie
+          </p>
+          <!-- the total amount of carbohydrates, protein, fat, sugar, and calories based upon the three fruit
+          choices selected on the form. Again, use your fruityvice.JSON file to extract and sum up that information. -->
+          <table id="nutrition-table">
+            <tr>
+              <th>Total Carbohydrates:</th>
+              <td><span id="carbs"></span></td>
+            </tr>
+            <tr>
+              <th>Total Protein:</th>
+              <td><span id="protein"></span></td>
+            </tr>
+            <tr>
+              <th>Total Fat:</th>
+              <td><span id="fat"></span></td>
+            </tr>
+            <tr>
+              <th>Total Sugar:</th>
+              <td><span id="sugar"></span></td>
+            </tr>
+            <tr>
+              <th>Total Calories:</th>
+              <td><span id="calories"></span></td>
+            </tr>
+          </table>
+        </section>
+      </section>
     </main>
 
     <footer>

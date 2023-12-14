@@ -3,7 +3,6 @@ const dropdowns = document.querySelectorAll(".choices");
 
 function populateDropdowns(data) {
   fruitNames = data.map((fruit) => fruit.name);
-  console.log(fruitNames);
   dropdowns.forEach((dropdown) => {
     for (const fruitName of fruitNames) {
       let option = document.createElement("option");
