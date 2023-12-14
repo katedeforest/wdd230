@@ -106,4 +106,32 @@
     grid-row: 2/3;
     grid-column: 2/3;
   }
+
+  /* ABOUT US PAGE */
+  #about-section {
+    display: block;
+  }
+
+  #about-section #family-img {
+    float: right;
+    width: auto;
+    padding: 0 0 1rem 1rem;
+  }
+
+  #about-section #market-img {
+    float: left;
+    width: auto;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  #about-section #smoothies-img {
+    float: right;
+    width: auto;
+    padding: 1rem 0 1rem 1rem;
+  }
+
+  #about-map iframe {
+    width: 600px;
+    height: 450px;
+  }
 }

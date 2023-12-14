@@ -1,18 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META CONTENT -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web Frontend Development - Katherine DeForest - Bountiful Foods About Us Page"
+    />
+    <meta name="author" content="Katherine DeForest" />
+    <!-- SOCIAL MEDIA META CONTENT -->
+    <meta
+      property="og:url"
+      content="https://katedeforest.github.io/wdd230/bountifulfoods/about.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="About Us | Bountiful Foods" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1514995428455-447d4443fa7f?q=80&w=1807&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    />
+    <meta
+      property="og:description"
+      content="Web Frontend Development - Katherine DeForest - Bountiful Foods About Us Page"
+    />
+    <!-- TITLE -->
+    <title>About Us | Bountiful Foods</title>
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <!-- SCRIPTS -->
+    <script src="scripts/hamburger-menu.js" defer></script>
+
+    <script src="scripts/modified-date.js" defer></script>
   </head>
   <body>
-    <!-- historical information about the company and area and a Google Map of Carlsbad California.
-        Include at least 2 images on this page that scale down at medium and small resolutions. -->
+    <header>
+      <!-- Readily available navigation which is consistent across all pages. The navigation uses a "hamburger menu" in
+        smaller resolutions. -->
+      <img
+        src="images/orange-slice.webp"
+        alt="Bountiful Foods Logo"
+        id="logo-icon"
+      />
+      <h1 id="logo-type">Bountiful Foods</h1>
+      <button class="menu-hide">&#9932;</button>
+      <button class="menu-show showing">&equiv;</button>
+      <!-- <nav id="chamber-nav"> -->
+      <ul id="header-nav">
+        <li class="navlist">
+          <a href="index.html" class="link">Home</a>
+        </li>
+        <li class="navlist">
+          <a href="order.html" class="link">Order</a>
+        </li>
+        <li class="navlist">
+          <a href="about.html" id="current" class="link">About Us</a>
+        </li>
+      </ul>
+    </header>
 
-    <!-- FOOTER
-        Include a resource/attribution section in the footer that references outside content used in your site.  At minimum that will include references to www.fruityvice.com Links to an external site.and openweathermap.org Links to an external site. 
+    <main id="about-main">
+      <h2 id="about-header">About Us</h2>
+      <!-- historical information about the company and area and a Google Map of Carlsbad California.
+        Include at least 2 images on this page that scale down at medium and small resolutions. -->
+      <section id="about-section">
+        <picture>
+          <source media="(min-width:1200px)" srcset="images/family.webp" />
+          <source media="(min-width:700px)" srcset="images/family.webp" />
+          <img src="images/family.webp" alt="smoothies" id="family-img" />
+        </picture>
+        <p>
+          Bountiful Foods, a prominent smoothie restaurant located in the
+          coastal city of Carlsbad, California, has a rich history dating back
+          to its establishment in 1998. Founded by health enthusiasts Emma and
+          Mark Anderson, the restaurant was born out of their passion for
+          promoting a healthy lifestyle through nutritious and delicious
+          smoothies.
+        </p>
+        <p>
+          In the early years, Bountiful Foods gained popularity for its
+          innovative approach to blending fruits, vegetables, and superfoods to
+          create a diverse menu of smoothie options. The founders emphasized the
+          use of locally sourced, organic ingredients to ensure the highest
+          quality and freshness in every beverage.
+        </p>
+        <p>
+          Bountiful Foods quickly became a community hub, attracting
+          health-conscious individuals and families seeking a refreshing
+          alternative to traditional fast food. The restaurant's commitment to
+          sustainability and eco-friendly practices further endeared it to the
+          environmentally conscious residents of Carlsbad.
+        </p>
+
+        <p>
+          Over the years, Bountiful Foods expanded its menu to include a variety
+          of smoothie bowls, salads, and wraps, catering to a broader range of
+          dietary preferences. The restaurant became known not only for its
+          tasty and nutritious offerings but also for its welcoming atmosphere
+          and commitment to customer satisfaction.
+        </p>
+        <picture>
+          <source media="(min-width:1200px)" srcset="images/market.webp" />
+          <source media="(min-width:700px)" srcset="images/market.webp" />
+          <img src="images/market.webp" alt="smoothies" id="market-img" />
+        </picture>
+
+        <p>
+          In the mid-2000s, Bountiful Foods underwent a significant renovation,
+          introducing a modern and vibrant interior design that reflected the
+          coastal lifestyle of Carlsbad. This transformation aimed to enhance
+          the overall dining experience and attract a more diverse clientele.
+        </p>
+        <p>
+          As the health and wellness trend continued to grow, Bountiful Foods
+          actively engaged with the community by hosting events such as yoga
+          classes, nutritional workshops, and wellness fairs. These initiatives
+          not only promoted a healthy lifestyle but also solidified the
+          restaurant's position as a focal point for health-conscious living in
+          Carlsbad.
+        </p>
+        <p>
+          Bountiful Foods weathered economic challenges during the recession in
+          2008 by adapting its menu and pricing to meet the evolving needs of
+          its customers. The restaurant's resilience and commitment to quality
+          ensured its continued success and loyalty from the local community.
+        </p>
+        <p>
+          In 2015, Bountiful Foods expanded its reach by opening a second
+          location in a neighboring town, further establishing its presence in
+          the Southern California health food scene. This expansion allowed the
+          restaurant to introduce its signature smoothies and bowls to a broader
+          audience.
+        </p>
+        <!-- <picture>
+          <source media="(min-width:1200px)" srcset="images/horizontal2.webp" />
+          <source media="(min-width:700px)" srcset="images/horizontal2.webp" />
+          <img
+            src="images/horizontal2.webp"
+            alt="smoothies"
+            id="smoothies-img"
+          />
+        </picture> -->
+        <p>
+          Recognizing the importance of staying ahead in the digital age,
+          Bountiful Foods embraced online ordering and delivery services, making
+          its nutritious offerings accessible to customers beyond the physical
+          confines of the restaurant. This move strengthened the restaurant's
+          position as a modern and forward-thinking establishment.
+        </p>
+        <p>
+          As of 2023, Bountiful Foods remains a beloved institution in Carlsbad,
+          known for its commitment to health, sustainability, and community
+          engagement. The restaurant continues to evolve, exploring new flavors,
+          ingredients, and partnerships, ensuring that it remains a staple in
+          the local culinary landscape for years to come.
+        </p>
+      </section>
+      <section id="about-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.80364293944!2d-117.44352283676969!3d33.121566500329706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702532660948!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+
+    <footer>
+      <!-- FOOTER
+        Include a resource/attribution section in the footer that references outside content used in your site. 
+        At minimum that will include references to www.fruityvice.com and openweathermap.org 
         Social media links (at least three) (no account necessary).
         Include the last modified date of the page in the footer using JavaScript.
         Contact information including e-mail address, phone number and street address -->
+      <section id="footer-contact">
+        <p>contact@bountifulfoods.com</p>
+        <p>(123) 456-7890</p>
+        <p>2907 State St, Carlsbad, CA 92008</p>
+        <p>
+          <a href="https://www.facebook.com/">Facebook</a> |
+          <a href="https://www.instagram.com/">Instagram</a> |
+          <a href="https://www.pinterest.com">Pinterest</a>
+        </p>
+      </section>
+      <section id="footer-pageinfo">
+        <p>Resources:</p>
+        <p><a href="www.fruityvice.com">www.fruityvice.com</a></p>
+        <p><a href="openweathermap.org">openweathermap.org</a></p>
+        <p>Last Modified: <span id="last-modified-span"></span></p>
+      </section>
+    </footer>
   </body>
 </html>
